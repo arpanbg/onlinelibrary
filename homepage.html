@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>homepage.html</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+	<!--[if IE 6]>
+	<style>
+	body {behavior: url("csshover3.htc");}
+	#menu li .drop {background:url("img/drop.gif") no-repeat right 8px; 
+	</style>
+	<![endif]-->
+
+</head>
+
+<body>
+	<h1 align="center">LIBRARY ONLINE</h1>
+	
+	<!-- sign-in menu -->
+	<ul id="nav-right">
+		<li>Register/Login</li>
+		<li>Help</li>
+	</ul>
+	
+	<!-- main menu -->
+	<ul id="menu">
+		<li>
+			<a href="#" class="drop">Home</a>
+			<div class="dropdown">
+				<div class="col_1_dropdown">
+					<h2>Heading</h2>
+				</div>
+				
+				<div class="col_1_dropdown">
+					<h3>Useful links</h3>
+					<ul>
+						<li><a href="#">Our mission</a></li>
+						<li><a href="#">Values and culture</a></li>
+						<li><a href="#">ABC</a></li>
+					</ul>
+				</div>
+			</div>
+		</li>
+		<li>
+			<a href="#" class="drop">Explore library</a>
+			<div class="dropdown">
+				<div class="col_1_dropdown">
+					<ul>
+						<li><a href="#">Fiction</a></li>
+						<li><a href="#">Literature</a></li>
+						<li><a href="#">Philosophy</a></li>
+						<li><a href="#">History</a></li>
+						<li><a href="#">Science</a></li>
+						<li><a href="#">Travel</a></li>
+						<li><a href="#">Economics and Finance</a></li>
+						<li><a href="#">Management</a></li>
+						<li><a href="#">Children's books</a><li>
+					</ul>
+				</div>
+			</div>
+		</li>
+		<li>
+			<a href="#" class="drop">How it works</a>
+			<div class="dropdown">
+				<div class="col_1_dropdown">
+					<ul>
+						<li><a href="#">Token model</a></li>
+						<li><a href="#">Library model</a></li>
+					</ul>
+				</div>
+			</div>
+		</li>
+		<li>
+			<a href="#" class="drop">Contact us</a>
+		</li>
+		<li>
+			<a href="#" class="drop">Contribute</a>
+		</li>
+		<li class="menu_right">
+			<a href="#" class="drop">News</a>
+			<div class="dropdown">
+				<div class="col_1_dropdown">
+					<ul>
+						<li><a href="#">Latest books</a></li>
+						<li><a href="#">Editor's pick</a></li>
+						<li><a href="#">Most popular</a></li>
+					</ul>
+				</div>
+			</div>
+		</li>
+		<li class="menu_right">
+			<!-- <a href="homepage.html" title="homepage">About Us</a> -->
+			<a href="#" class="drop">About Us</a>
+			<div class="dropdown">
+				<div class="col_1_dropdown">
+					<ul>
+						<li><a href="#">Vision</a></li>
+						<li><a href="#">Values</a></li>
+					</ul>
+				</div>
+			</div>
+		</li>
+		
+	</ul>
+	
+	<!-- search form -->
+	<ul id="nav-block">
+		<li id="li-align">Search</li>
+		<li id="li-align">Advanced Search</li>
+		<li>Title
+			<input type="text" name="title-box" />
+		</li>
+		<li>Author
+			<input type="text" name="author-box" />
+		</li>
+		<li>Genre 
+			<select>
+				<option value="default">--Select--</option>
+				<option value="fiction">Fiction</option>
+				<option value="classics">Literature</option>
+				<option value="tech">Sci & Tech</option>
+				<option value="acads">Academics</option>
+				<option value="history">History</option>
+			</select>
+		</li>
+		<li>Keywords
+			<input type="text" name="keywords-box" />
+		</li>
+		<li><input type="button" value="Search" /></li>
+	</ul>
+</body>
+</html>
