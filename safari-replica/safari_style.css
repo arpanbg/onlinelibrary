@@ -1,8 +1,10 @@
 #global_navigation {
 	background:#00467f;
-	min-height: 100px;
 	z-index:2000;
 	position:relative;
+	padding:0pt;
+	margin:0pt;
+	min-height:100px;
 }
 #global_navigation img.img_wrapper {
 	height: auto;
@@ -10,26 +12,73 @@
 }
 
 div.wrapper {
-	padding:10px;
+	width:1010px;
+	padding:0px;
+	position:relative;
+	margin:0px auto;
+	border:0pt none;
+	outline:0pt none;
+	font-size:100%;
+	vertical-align:baseline;
+	min-height:100px;
 }
+
+div.wrapper div#header {
+	padding:12px 0px 0px 0px;
+	margin:0px;
+	border:0pt none;
+	outline:0pt none;
+	vertical-align:baseline;
+	font-size:100%;
+	min-height:100px;
+}
+
 div.wrapper div#header h1 {
 	padding:0px;
-	margin:0px;
-	width:40%;
+	font-size:18px;
+	width:100px;
 	float:none;
+	margin:0px;
+	overflow:auto;
+	height:auto;
+	float: left;
 }
 div.wrapper div#header h1 a {
 	display:inline;
 }
-div.wraper div#header .block-menu-block {
-	padding:0px 10px 10px;
-	overflow:auto;
+
+.content {
+	display:none;
+	padding:0px;
+	margin:0px;
+	border:0px;
 }
 
 div.wrapper  div#header .region-primary-navigation {
-	margin-top:25px;
-	margin-left: 230px;	
+	margin-top:20px;
+	margin-left:150px;	
 	width: 780px;
+	margin-bottom:0px;
+	margin-right:0pt;
+	padding:0px 0px 0px 0px;
+	border:0pt none;
+	outline:0pt none;
+	font-size:100%;
+	vertical-align:baseline;
+	z-index:2005;
+}
+
+div.wrapper div#header .block-menu-block {
+	padding:0px 0px 0px 0px;
+	overflow:auto;
+	width:auto;
+	/*float:left; /* used for???? */
+	margin-top:50px;
+	border:0pt none;
+	outline:0pt none;
+	font-size:100%;
+	vertical-align:baseline;
+	background:none repeat scroll 0% 0% transparent
 }
 
 div.wrapper div#header .region-primary-navigation div#block-search-form {
@@ -41,8 +90,14 @@ div.wrapper div#header .region-primary-navigation div#block-search-form {
 
 div.wrapper  div#header  ul.menu { 
 	list-style-type: none;
-	margin: 10px;
+	margin: 0px;
 	font-size: 15px;
+	border:medium none;
+	list-style:none outside none;
+	text-align:left;
+	padding:0pt;
+	outline:0pt none;
+	vertical-align:baseline;
 }
 
 div.wrapper div#header  ul.menu  li {
@@ -50,13 +105,21 @@ div.wrapper div#header  ul.menu  li {
 	margin: 0px;
 	margin-right:15px; /* spacing between the list items */
 	float: left;
+	list-style-image:none;
+	list-style-type:none;
+	font-size:14px;
+	line-height:150%;
+	border:0pt none;
+	outline:0pt none;
+	vertical-align:baseline;	
 }
 
 div.wrapper  div#header  ul.menu  li a { 
 	color: #FFF;
 	display: block;
-	font-size: 30px;
+	font-size: 20px;
 	text-decoration: none;
+	/*padding:5px 12px 10px;*/
 }
 
 div.wrapper div#header a#signin {
@@ -97,10 +160,14 @@ div.wrapper div#header a#signin {
 #secondary_navigation {
 	background:#d6e3f0;
 	min-height:16px;
+	z-index:2005;
+	position:relative;
+	border:medium none;
+	clear:both; /* find out its function?? */
 }
 #secondary_navigation.no_margin {
 	margin-bottom:0;
-	margin-top:15px;
+	margin-top:0px;
 	border-bottom:0;
 }
 .clearer {

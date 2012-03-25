@@ -1,0 +1,3085 @@
+/* German CSS */
+
+.item-list-de ul li.views-row-even, .item-list-de ul li.views-row-first {
+	display:block;
+	width: 46%;
+	margin: 15px 2% !important;
+	margin-right: 5%;
+	float: left;
+	border-radius: 5px;
+	
+	/*overwrite*/
+	margin-bottom: 15px;
+
+	background: url(../img/darkbluegradient.png) repeat-x #01427a;
+}
+
+.item-list-de .node-action-bucket h2 a {
+	font-size:14px;
+}
+
+.item-list-de .field-collection-item-field-action-buttons a {
+	line-height:95%;
+}
+
+
+/* End German */
+
+/* Some basic Drupal overrides */ 
+.form-item,  .form-actions {
+	margin: 0px;/*overwrite stlyes */
+	padding: 0px;
+}
+
+.field-collection-container .field-items .field-item {
+	margin-bottom:0px;
+}
+
+.element-invisible {
+	display: none;
+}
+
+.item-list ul li {
+	margin: 0px;
+}
+.item-list .pager li {
+	padding: 3px;
+}
+
+.field-collection-view {
+	margin: 0px;
+	padding:0px;
+	border-bottom: 0px;
+}
+ul.menu li {
+	margin: 0;
+}
+
+#internal_content .region-content ul li.views-row {
+	padding-left: 0px;
+}
+
+#mainContent table{
+	width: 100%;
+}
+
+.clearsearch{
+	display: block;
+	text-align:center;
+ 	margin-top: 3px; 
+	margin-right: 5px;
+ 	float:right;
+}
+
+.clearsearch:hover {
+  cursor:pointer;
+}
+
+
+/* Base style for links */
+
+a { color: #003399;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(255,0,0,1);
+
+}
+a:visited { 
+	color: #003399;     
+}
+a:active {
+	 color: #003399; 
+	background-color: none;
+
+}
+
+a:hover { 
+	color: #6c88bb;
+}
+
+/* Used to clear floats */
+.clearer { 
+	width: 100%;
+	height: 0px;
+	clear: both;
+}
+
+
+/* Base style for body */
+body {
+	background: #FFF;
+	font-family: "Verdana", "Helvetica", "Arial", Sans Serif;
+	margin:0px;
+}
+
+
+/* Base style for body text */
+
+p { margin-bottom: 10px; }
+p,li{
+ font-size: 14px;
+ line-height: 150%;    
+}
+
+p:last-child { margin-bottom: 0px; } 
+
+
+/* Header font size */
+h1 { font-size: 18px; margin-bottom:10px;} 
+
+
+/* Universal padding of content areas */
+
+
+
+div.wrapper {
+ 	padding: 10px; 
+}
+
+/* No padding on the front page on iPhone so that headers stretch all the way across */
+
+.front div.wrapper {
+	padding: 0px;
+}
+
+/* No padding on the subscribe or browse pages either! */
+
+.page-node-35 div.wrapper, /* /browse */
+.page-browse-library div.wrapper, /* /browse/term */
+.page-node-13 div.wrapper, /* /subscriptions */
+.page-node-27 div.wrapper 
+{
+	padding:0;
+}
+
+
+
+
+
+
+
+/* Set up style for global navigation */
+
+#global_navigation {
+	background:#00467f;
+	padding:0;
+	margin:0;
+	z-index: 2000;
+	position:relative;
+
+}
+
+
+/* Styles for logo in header */
+
+div.wrapper  div#header  h1 {
+	padding: 0px;
+	margin:0px;
+	width: 40%;
+	float: none;
+}
+div.wrapper  div#header  h1 a {
+	display: block;
+}
+div.wrapper  div#header  h1 img {
+
+	max-width: 100%;
+	width: 119px;
+	height: auto !important;
+
+}
+
+/* Primary navigation */
+
+div.wrapper  div#header  ul.menu { 
+
+	list-style-type: none;
+	margin: 0px;
+	font-size: 15px;
+}
+
+div.wrapper  div#header .region-navigation { 
+	clear:both;
+}
+
+div.wrapper  div#header #block-system-main-menu h2{
+	display: none;
+} 
+
+
+div.wrapper div#header  ul.menu  li {
+	display: block;	
+	margin: 0px;
+	margin-right:15px;
+	float: left;
+}
+
+div.wrapper  div#header  ul.menu  li a { 
+	color: #FFF;
+	display: block;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+div.wrapper  div#header  ul.menu  li a span {
+	display: none;
+} 
+
+
+
+/* Special formatting for mobile */
+#global_navigation div.wrapper {
+	padding:0;
+}
+
+#global_navigation div#header h1 {
+	padding: 10px;
+	overflow:auto;
+}
+#global_navigation div#header .block-menu-block {
+	padding: 0px 10px 10px;
+	overflow:auto;
+
+}
+
+
+
+
+/* Style for search button that appears only on iPhone */
+
+#search_toggle {
+	background: url(../img/mobile_search.png) #003265 no-repeat center center;
+	background-size: 24px 22px;
+	border-radius: 3px;
+	border: 1px solid #000;
+	display: block;
+	position: absolute;
+	height: 25px;
+	width: 26px; 
+	color: transparent;
+	text-indent: -999999px;
+	top: 15px;
+	right: 95px;
+}
+
+
+/* iPhone styles for Sign In button */
+div.wrapper  div#header  a#signin {
+	
+	display: block;
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	color:#FFF;
+	text-decoration:none;
+
+	/*below not applicablefor 768.css */
+	padding: 5px 10px 4px 10px;
+	margin-bottom: 10px;
+	font-size:14px;
+ 	background-color: #003265;
+	text-transform: uppercase;
+	border-radius: 3px;
+	
+
+	border: 1px solid #000;
+	
+	font-family: "Arial Rounded MT Bold";
+
+}
+
+
+/* Pop-out sign in form */
+/* This is invisible by default -- when .active is added, it appears */
+#signin_popup{
+	display: none;
+}
+
+/* When the active class is set, the box appears! */
+#signin_popup.active{
+	display: block;
+}
+
+#signin_popup.active #signin_form_box{
+	padding-top: 14px;
+	padding-bottom: 17px;
+	padding-right: 12px;
+	padding-left: 12px;
+}
+#signin_form_box > p{
+	display: none;
+	font-size: 19px;
+	font-weight: lighter;
+	font-family: 'DIN Medium';
+	color: #00467f;
+}
+#signin_form_box form > p {
+	margin-bottom:0px;
+}
+#signin_form_box p label{
+	font-weight: lighter;
+	font-size: 12px;	
+	float: left;
+}
+#signin_form_box p a { 
+	float: right;
+	font-size: 12px;
+	text-decoration: none;
+}
+#signin_form_box input{
+	margin-bottom: 16px;
+	width: 95%;
+	clear: both;
+}
+#signin_form_box > a.close_popup{
+	display: none;
+	float: right;
+	text-decoration: none;
+	
+	border-radius: 50px;
+	background-color: rgb(114, 153, 185);
+	color: #fff;
+	
+	padding-top: 0px;
+	padding-bottom: 2px;
+	padding-left: 6px;
+	padding-right: 6px;
+	
+	font-size: 15px;
+}
+#signin_form_box input[type="submit"]{
+
+	display: block;
+	width: 118px;
+	font-family: "DIN Medium";
+	font-size: 15px;
+	font-weight: normal;
+	text-transform:uppercase;
+	border-radius: 5px;
+	padding: 3px;
+	color: #fff;
+}
+#signin_form_box #new_account{
+	background-color: rgb(199, 220, 240);	
+	padding-left: 10px;
+	padding-right: 5px;
+	padding-top: 11px;
+	padding-bottom: 13px;
+	border-radius: 3px;	
+	overflow: auto;
+}
+#signin_form_box #new_account p{
+	font-size: 12px;	
+}
+#signin_form_box #new_account a{
+	text-decoration: none;	
+}
+#signin_form_box #new_account a:last-child{
+	float: right;
+	margin-right: 30px;
+}
+
+#signin_error_message{
+	display: none;
+}
+#signin_error_message.active{
+	display: block;
+}
+
+
+/* On  iPhone, the search form pops out when the search_Toggle button is clicked */
+/* And it is displayed as if it were part of the secnodary navigation, even though it reall is part of the primary nav */
+div.wrapper  div#header .region-primary-navigation  div#block-search-form {
+	clear: both;
+	background: #d6e3f0;
+	padding: 10px;
+	display:none;
+}
+
+div.wrapper  div#header .region-primary-navigation  div#block-search-form form {
+	width: 250px;
+	margin: 0px auto;
+	overflow: auto;
+}
+
+
+div.wrapper  div#header .region-primary-navigation  div#block-search-form .form-item-search-block-form {
+	width: 220px;
+	float:left;
+	background: #FFF;
+	border: 1px solid #000;
+	border-right: 0px;
+	color: #333333;
+	font-size:13px;
+	-moz-border-radius-bottomleft: 3px;
+	-moz-border-radius-topleft: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-webkit-border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+
+}
+
+div.wrapper  div#header .region-primary-navigation  div#block-search-form input#edit-search-block-form--2 {
+	border: 0;
+	padding: 3px 5px 4px;
+	height:15px;
+	margin: 0;
+	background-image: none; /* disable drupal throbber */
+	-moz-border-radius-bottomleft: 3px;
+	-moz-border-radius-topleft: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-webkit-border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+	outline: none;
+}
+
+
+div.wrapper  div#header .region-primary-navigation input.form-submit {
+	text-transform: capitalize; 
+	text-indent: -1000px;
+	display: block;
+	height:24px;
+	width:26px;	
+	background: url(../img/search_top_inactive.png) no-repeat -1px -1px;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-topright: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+	
+	float: left;
+	padding:0px;  
+	margin:0px;
+	
+	border:1px solid #000;
+}
+
+
+div.wrapper  div#header .region-primary-navigation  div#block-search-form form.busy input.form-submit {
+	background: url(../img/search_top_active.gif) no-repeat -1px -1px;
+
+}
+
+
+/* AUTOCOMPLETE POPUP */
+
+#autocomplete {
+  z-index:4;
+  position:absolute;
+}
+
+div.wrapper  div#header .region-primary-navigation #autocomplete {
+	width: 270px !important;
+	margin-left: -35px;
+	border: 1px solid #004882;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius:4px;
+}
+
+div.wrapper  div#header .region-primary-navigation #autocomplete ul
+{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius:4px;
+}
+div.wrapper div#header .region-primary-navigation #autocomplete ul li { 
+	padding: 5px 10px;
+	font-size: 11px;
+	white-space: normal;
+}
+
+div.wrapper div#header .region-primary-navigation #autocomplete ul li a  {
+	color: #000;
+	text-decoration: none;
+}
+
+div.wrapper div#header .region-primary-navigation #autocomplete ul li a strong {
+	color: #003399;
+	font-weight: normal;
+} 
+
+/*search dropdown  highlighted color -- overwriting a style from the Drupal CORE here! */
+#autocomplete li.selected {
+  background: #cce0f1;
+  color: #fff;
+}
+#librarysearch #autocomplete,
+#librarysearch #autocomplete li {
+  width: 220px !important;
+}
+
+
+/* secondary navigation */
+#secondary_navigation {
+	background: #d6e3f0;
+	min-height:6px;
+	margin-bottom:10px;
+}
+
+#secondary_navigation.no_margin {
+	margin-bottom: 0;
+	border-bottom: 0;
+}
+
+#secondary_navigation .wrapper{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#secondary_navigation h2 { 
+	display: none;
+}
+
+#secondary_navigation ul {
+ 	list-style-type: none;
+ 	margin:0px;
+ 	padding: 10px 0px;
+
+}
+
+#secondary_navigation ul{
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+}
+#secondary_navigation ul li {
+	border-bottom: 1px solid #039;
+	border-right: 1px solid #039;
+}
+#secondary_navigation ul li.last {
+	margin-right: 0;
+}
+#secondary_navigation ul li a { 
+	display: block;
+	
+	text-decoration: none;
+	font-size: 18px;
+	
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 20px;
+	
+	background-image: url('../img/mobile-arrow-right.png');
+	background-repeat: no-repeat;
+	background-position: center right;
+	color: #00467f;
+
+}
+
+#secondary_navigation div.wrapper {
+	padding: 0px;
+}
+#secondary_navigation ul li a:hover{
+	color: #00467f;
+}
+
+#secondary_navigation ul li a.active:hover,
+#secondary_navigation ul li a.active-trail:hover {
+	color: #000;
+}
+
+#secondary_navigation ul li a { 
+	background-position: 95% 50%;
+}
+#secondary_navigation ul li:first-child a{
+	background-position: 95% 30%;
+}
+#secondary_navigation ul li:last-child a{
+	background-position: 95% 70%;
+}
+#secondary_navigation ul li:last-child a{
+
+}
+
+
+
+/* homepage hero styles */
+
+#homepage_hero {
+
+	background:  url(../img/MUI_Background.png) #528fc0 no-repeat bottom center;
+ 	background-size: 100%;
+
+	font-family: 'DIN Medium';
+	color: #FFF;
+	margin:0px;
+}
+#homepage_hero img { 
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: auto !important;
+
+}
+
+#homepage_hero .demo {
+	/* demo icon */
+	margin-left: 55%;
+	background: url(../img/demo.png) no-repeat;
+	height: 35px;
+	font-size: 17px;
+	font-family: 'DIN Medium';
+	text-transform:uppercase;
+	padding-top: 7px;
+	padding-left: 6.5px;
+	/*overwrite */
+	/*display: none;*/
+	cursor: pointer;
+}
+#homepage_hero a#demo_kicker {
+	color: #FFF;
+}
+
+#homepage_hero h2 {
+	line-height: 1.2em;
+	font-size: 24px;
+	font-weight: lighter;
+	margin-left: 10px;
+	margin-bottom:20px;
+}
+
+#homepage_hero ul li { 
+	font-size: 16px; 
+	margin-left: 10px;
+	background: url(../img/bullet.png) no-repeat 0px 8px;
+	padding-left: 15px;	
+	list-style-type: none;
+
+	margin-bottom: 0px;
+	/* overwrite */
+	padding-top: 0px;
+}
+
+#homepage_hero ul li:last-child,#homepage_hero ul li.last {
+	margin-bottom:0px; 
+}
+
+#homepage_hero .wrapper {
+	padding-top:20px;
+	padding-bottom: 20px;
+	
+}
+
+#homepage_hero .region-featured{
+	
+}
+#homepage_hero .content{
+	/* FIX THIS IE7 support */
+	background-size: 90%;
+
+}
+
+
+
+
+/* Carousel */
+.node-rotator h2 {
+	display: none; 
+}
+
+/* Always hide the pagination for these jcarousels */
+.jcarousel-navigation {
+	display: none;
+}
+
+/* MObile Rotator */
+/* hide mobile rotator */
+#block-views-nodequeue-2-block-1 {
+	display: block; 
+	background: #a3bfd6;
+
+}
+
+#block-views-nodequeue-2-block-1 a img {
+	display: block;
+} 
+
+
+
+/* BIG ROTATOR */
+#block-views-nodequeue-2-block {
+	display: none;
+
+}
+
+
+
+/* Action Bucket on Homepage*/
+#block-views-nodequeue-1-block {
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/* clearfix */
+#block-views-nodequeue-1-block:after {
+	    content: ".";
+	    display: block;
+	    height: 0;
+	    clear: both;
+	    visibility: hidden;
+}
+
+/* On iPhone, each action bucket item appears as a big blue box */
+#block-views-nodequeue-1-block .item-list > ul li.views-row {
+
+	width: 47.5%;
+
+	margin: 0px;
+	margin-right: 5%;
+	float: left;
+	border-radius: 5px;
+	
+	/*overwrite*/
+	margin-bottom: 15px;
+
+	background: url(../img/darkbluegradient.png) repeat-x #01427a;
+}
+
+/* Since we have 2x2 row, the even items don't need a right margin */
+#block-views-nodequeue-1-block .item-list > ul li.views-row-even {
+ 	margin-right: 0px; 
+}
+
+#block-views-nodequeue-1-block .item-list > ul li.views-row-last { 
+	margin-right: 0px;
+}
+
+
+
+/* Set up each bucket item */
+.node-action-bucket{
+	min-height: 115px;	
+	position: relative;
+	border-top: 0px;
+	font-size: 13px;
+	
+	-moz-border-radius:5px 5px 5px 5px;
+	-webkit-border-radius:5px 5px 5px 5px;
+	border-radius:5px 5px 5px 5px;	
+	
+}
+.node-action-bucket .field-collection-container {
+	border: 0px;
+}
+
+.node-action-bucket .content .field-name-field-action-list .field-item .field-item {
+	display: none;
+}
+
+.node-action-bucket a{
+	text-decoration: none;
+}
+
+.node-action-bucket .content .field-name-field-action-list .field-collection-view {
+	padding: 0px;
+	margin: 0px;
+	border:0px;
+}
+
+
+
+
+/* Action Bucket Headers */
+.node-action-bucket h2, .item-list-de .node-action-bucket h2{
+	
+	color: #FFF;
+	font-family: "DIN Medium", "Verdana", "Sans Serif";
+	font-weight: lighter;
+	text-transform: uppercase;
+	
+	-moz-border-radius:5px 5px 0px 0px;
+	-webkit-border-radius:5px 5px 0px 0px;
+	border-radius:5px 5px 0px 0px;
+}
+
+.node-action-bucket h2 a { 
+	color: #FFF;
+	text-decoration: none;
+	font-size: 1.35em;
+	text-align: center;
+	margin-top: 10px;
+	display: block;
+	background-repeat: no-repeat;}
+
+.node-action-bucket h2 a span.subtitle {
+	font-family: "DIN Medium", "Verdana", "Sans Serif";
+	font-weight: lighter;
+	font-size: 18px;
+	text-transform: none;
+	display: none;
+} 
+
+
+
+
+.node-action-bucket .field-collection-view {
+	position: relative;
+}
+
+
+
+/* on iPhone, we hide the bullet points */
+.node-action-bucket .field-collection-view  .field-collection-view-links { 
+	display: none;
+}
+
+
+
+
+/* this is the style for the pop-out Drupal menu */
+.node-action-bucket .field-collection-view:hover  .field-collection-view-links { 
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 50px;
+	background: #FFF;
+	border:1px solid #CCC;
+	box-shadow: 1px 1px 1px #000;
+}
+
+.node-action-bucket .action-links-field-collection-add {
+	display: none;
+}
+
+/* Action bucket buttons */
+.node-action-bucket .field-collection-item-field-action-buttons a {	
+	margin-top: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	
+	color: rgb(122, 0, 15);
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'DIN Medium';
+	font-size: 110%;
+	text-shadow: 1px 1px 3px #ffffff;
+	
+	/*height: 30px;*/
+	width: 80%;
+	display: block;
+	
+	background: url(../img/button_orange.png) repeat-x #f89a2a;
+	border: 1px solid #F79422;
+	-moz-border-radius:5px 5px 5px 5px;
+	-webkit-border-radius:5px 5px 5px 5px;
+	border-radius:5px 5px 5px 5px;
+	/*overwrite*/
+	padding: 6% 3% 3% 3%;
+}
+@media only screen and (min-width: 420px) and (max-width: 550px) {
+	.node-action-bucket .field-collection-item-field-action-buttons a {	
+	font-size: 140%;
+	padding: 6% 3% 3% 3%;
+
+	}
+}
+@media only screen and (min-width: 551px) and (max-width: 767px) {
+	.node-action-bucket .field-collection-item-field-action-buttons a {	
+	font-size: 180%;
+	padding: 6% 3% 3% 3%;
+
+	}
+}
+
+
+/* Testimonial block on homepage */
+
+.front #block-views-testimony-block .content {
+	padding: 10px;
+}
+
+.front #block-views-testimony-block .more-link {
+	float: right;
+	font-size: 16px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+
+#block-views-testimony-block h2 {
+	/* See SIDEBAR STYLE HEADLINES */
+	margin-bottom:20px;
+}
+
+#block-views-testimony-block .views-field-field-testimonial-quote p{
+	display: block;
+	font-size: 18px;
+	font-family: "Verdana";
+	font-weight: lighter;
+	line-height: 130%;
+	margin-bottom: 10px;	
+}
+#block-views-testimony-block .field-name-field-testimonial-quote div {
+	display: block;
+}
+#block-views-testimony-block .views-field-field-testimonial-quote p:before{
+	content: ".";
+	text-indent: -999999px;
+	text-transform: capitalize;
+	background-image: url(../img/open-paren-blue.png);
+	background-repeat: no-repeat;
+	color: rgba(0, 0, 0, 0);
+	padding-right: 25px;
+	margin-right: 5px;
+	height: 30px;
+	width: 20px;
+}
+#block-views-testimony-block .views-field-field-testimonial-quote p:after{
+	content: ".";
+	text-indent: -999999px;
+	text-transform: capitalize;
+	background-image: url(../img/close-paren-blue.png);
+	background-repeat: no-repeat;
+	color: rgba(0, 0, 0, 0);
+	margin-left: 10px;
+	padding-left: 30px;
+	height: 30px;
+	width: 20px;
+} 
+
+#block-views-testimony-block .views-field-field-testimonial-from,
+#block-views-testimony-block .views-field-field-testimonial-pos{
+	font-size: 16px;
+
+}
+
+
+
+/* Hide Creative Edge Promo unit on homepage for iPhone*/
+#block-block-2{
+	/*overwrite*/
+	display: none;
+}
+
+
+
+
+
+/* Instead of the search & preview box on homepage, we have a list of categories  which are controlled by a custom block*/
+/* show custom browse categories */
+
+/* hide library search on homepage */
+#block-sbo-sbo-search {
+	display: none;
+}
+
+
+#mobile_search_preview {
+	display: block;
+}
+
+#mobile_search_preview h2 {
+	/* See sidebar style headers */
+}
+
+#mobile_search_preview li {
+	border: 1px solid #808080;
+	background: url(../img/browse_skin.png) #FFF no-repeat right bottom;
+}
+#mobile_search_preview li a {
+	display: block;
+	padding: 15px;
+	padding-left: 70px;
+	font-size: 18px;
+}
+ 
+ 
+#mobile_search_preview li#new_releases a {
+	background: url(../img/BlueStar.png) no-repeat 15px center;
+	background-size: auto 70%; 
+}
+#mobile_search_preview li#popular_books a {
+	background: url(../img/BlueBook.png) no-repeat 20px center;
+	background-size: auto 70%; 
+
+}
+#mobile_search_preview li#popular_videos a {
+	background: url(../img/BlueVideo.png) no-repeat 15px center;
+	background-size: 40px; 
+
+}
+#mobile_search_preview li#categories a {
+	background: url(../img/BlueSpyglass.png) no-repeat 15px center;
+	background-size: auto 70%; 
+
+}
+
+
+
+
+
+/* general button styles*/
+.button{
+	text-decoration: none;
+	display: block;
+	font-family: "DIN Medium", "Verdana", "Sans Serif";
+	font-size: 15px;
+	font-weight: 100;
+	text-transform:uppercase;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid;	
+	padding: 2px;	
+}
+
+
+.button.blue, /* generic blue buttons */
+#subscriptions_info_list a.button, /* subscription table action button */
+#edit-submit, /* submit button on testimonial submission form */
+.node-webcast a.button, /* webcast play now buttons */
+.node-whitepage a.button, /* whitepage download now buttons */
+#signin_form_box input[type="submit"] /* login button in popout form */
+ {
+
+	border: 1px solid #003058;	
+	color: #fff;
+
+	background: url(../img/button_blue.png) repeat-x #004a86;
+	
+}
+
+
+.button.blue{
+	
+	width: 150px;
+	font-size: 15px;
+	
+}
+.region-sidebar .blue.button{
+	font-size: 16px;
+    font-weight: 400;
+	padding-top: 8px;
+	padding-bottom: 4px;
+}
+.region-sidebar .button{
+	width: 82.4468085%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.button.red{
+	border: 1px solid #af2317;
+	
+	margin-top: 5px;
+	color: #fff;
+
+	background: url(../img/button_red.png) repeat-x #8e2317;
+}
+
+.breakpoint-320 .node .button {
+	margin-top:10px;
+	margin-bottom:10px;
+	width: 150px;
+}
+
+
+
+/* sidebar styles */
+/* On an iPhone, these are hidden EXCEPT on the browse library page */
+#internal_sidebar {
+	display: none;
+}
+
+
+
+/* Main content area */
+#main #internal_content{
+	font-size: 18px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+}
+
+
+/* 2012-01-24 */
+/* pad all individual elements in so that some special elements can be left full width */
+
+
+
+.page-node-35 #main #internal_content, /* /browse */
+.page-browse-library #main #internal_content, /* /browse/term */
+.page-node-13 #main #internal_content, /* /subscriptions */
+.page-node-27 #main #internal_content { /* orgs and teams */
+	margin-left:0;
+	margin-right: 0;
+	width: auto;
+}
+
+.page-node-27 #main #internal_content .request-info-block a {
+  display: block;
+  clear: both;
+  font-weight: bold;
+}
+
+
+
+
+.page-node-13 #main #internal_content h1,
+.page-node-13 #main #internal_content h2.with-tabs,
+.page-node-13 #main #internal_content h3,
+.page-node-13 #main #internal_content .field-item > div > p,
+.page-node-13 #main #internal_content .field-item > p,
+
+.page-node-13 #main #internal_content ul
+{
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.page-node-13 #main #internal_content ul#subscriptions_info_list  {
+	margin: 0;
+}
+
+
+
+
+.page-node-27 #main #internal_content h1,
+.page-node-27 #main #internal_content h2,
+.page-node-27 #main #internal_content h3,
+.page-node-27 #main #internal_content p,
+.page-node-27 #main #internal_content ul
+{
+	margin-left:20px;
+	margin-right:20px;
+}
+
+/* sidebar styles for browse library page which is substituted for main content on iphone */
+#internal_sidebar h1,
+#internal_sidebar .content > h2,
+#internal_sidebar h3,
+#internal_sidebar p {
+	margin-left:20px;
+	margin-right:20px;
+}
+
+
+/* no margin on UL on the browse page */
+
+
+
+#internal_content .browse-results  ul { 
+	margin-left:0;
+	margin-right:0;
+}
+
+.browse-results a.readmore {  
+	display:block;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+
+/* header on browse library pages */
+.page-browse-library #main #internal_content h2 {
+	margin-left:20px;
+	margin-right:20px;
+}
+
+
+
+
+/* general node styles */
+#main #internal_content .region-content .content h2{
+	
+	font-family: "Verdana", "Sans Serif";
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: 25px;
+	margin-bottom: 30px; 
+}
+
+/* Hide drupal's default breadcrumb */
+#main #internal_content > .breadcrumb{
+	display: none;
+}
+
+/*title block of main text area*/
+#main #internal_content #tabs-wrapper > h2, h2.red-header{
+	color: #b32317;
+	font-family: "Verdana", "Sans Serif";
+	font-size: 28px;
+	font-weight: 100;
+	margin-bottom: 10px;
+}
+#main #internal_content #tabs-wrapper > ul{/*title block of main text area*/
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* general list styles */
+
+
+/*default list style for main content block */
+#internal_content .region-content ul{
+
+	padding-left: 0px;
+	margin-top: 20px;
+	margin-bottom: 20px; 
+	
+}
+#internal_content .region-content ul li{
+	min-height: 11px;
+	background-image: url('../img/big-dot.png');
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+	padding-left: 20px;
+ 	margin-bottom: 10px;	 
+}
+
+/* The newsletter descriptions also have bullet points in them that need special treatment */
+#internal_content .region-content-bottom .view-newsletters ul li{
+	min-height: 11px;
+	background-image: url('../img/big-dot.png');
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+	padding-left: 25px;
+ 	margin-bottom: 10px;	 
+ 	font-size: 12px;
+}
+
+
+#internal_content .region-content ul.links {
+	padding-left: 0;
+}
+
+#internal_content .region-content ul.links li {
+	background-image: none;
+	padding-left: 0;
+	margin-bottom: 0;
+
+}
+
+
+/* special list styles */
+
+ul.arrow-list{
+	padding-left: 0px !important;		
+}
+ul.arrow-list li{
+	min-height: 20px !important; 
+	background-image: url('../img/bullet-style-arrow.png') !important;
+	background-repeat: no-repeat !important;
+	background-position: center left !important;	
+	padding-left: 41px !important;
+	margin-bottom: 10px !important;
+}
+a.bold-link{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 0px;
+	display: block;
+}
+ul.arrow-list li a.bold-link{
+	margin-bottom: 10px;
+	margin-top: 10px;	
+}
+
+
+
+
+
+/* Images on the subscribe pages */
+/* overwrite, all these background images go away as the browser increases
+  ...don't forget to replace the icons with big ones later
+*/
+#node-1{
+	background-image: url(../img/IndivLight.png);
+	background-position: center center;
+	background-position: 70% 35%; 
+	background-repeat: no-repeat;
+}
+#node-5{
+	background-image: url(../img/OrgLight.png);
+	background-position: center 40%;
+	background-repeat: no-repeat;
+}
+#node-6{
+	background-image: url(../img/GovLight.png);
+	background-position: center 40%;
+	background-repeat: no-repeat;
+}
+#node-7{
+	background-image: url(../img/LibLight.png);
+	background-position: 60% 40%;
+	background-repeat: no-repeat;
+}
+
+
+/* pager */
+.item-list .pager {
+	margin-bottom: 40px;
+}
+#search-results-wrapper ul.pager{
+	padding-left: 0px;
+	text-align: left;
+	font-size: 14px;
+        line-height: 150%;
+}
+ul.pager .pager-current{
+	border: 1px solid #ccc;
+	color: #777;
+	padding: 5px;
+}
+#internal_content .region-content ul.pager li{
+	background-image: none;
+	padding-left: 5px;
+}
+#internal_content .region-content ul.pager li a{
+	text-decoration: none;
+	color: #039;
+	text-transform: capitalize;
+}
+#internal_content .region-content ul.pager li.pager-first{
+	display: none;
+}
+#internal_content .region-content ul.pager li.pager-last{
+	display: none;
+}
+
+
+ul li.leaf{
+	list-style-image: none;
+	list-style-type: none;
+}
+li.expanded, li.collapsed, li.leaf { 
+	padding: 0px;
+	
+}
+.more-link{
+	text-align: left;
+}
+
+
+
+
+
+
+
+/* Publishers section of footer */
+
+#block-sbo-sbo-publishers li a { 
+	font-size: 12px; 
+}
+
+.region-publisher-list #block-views-nodequeue-3-block{
+	overflow: auto;
+	
+}
+#publisher_list {
+	overflow: auto;
+	padding-top:15px;
+}
+#publisher_list .view-footer{
+	float: left;
+	margin-left: 40px;
+	display: block;
+	width: 80%;
+}
+#publisher_list .view-footer a{
+	display: block;
+	font-size: 14px;
+	font-weight:bold;
+	margin-top:17px;
+	text-align: right;
+	text-decoration: none;
+	color: #004e87;
+}
+
+
+#publisher_list h2 {
+	/* see SIDEBAR STYLE HEADERS */
+	margin-bottom:20px;
+}
+
+#publisher_list .views-row {
+	float: left;
+	margin-bottom: 15px;
+	margin-left: 10%;
+	width: 40%;
+}
+
+#publisher_list .views-row .views-field .field-content img {
+	width: auto;
+	max-width: 200px;
+}
+
+
+/* on iphone, show publisher list only on homepage */
+
+#publisher_list {
+	display: none;
+}
+
+.front #publisher_list {
+	display: block;
+}
+
+
+
+
+
+/*footer section */
+
+/* On iPhone, we have a simpler footer menu */
+#mobile_footer { 
+	display: block; 
+	margin-top: 20px;
+}
+
+/* Hide the large footer on iPhone */
+#footer_links { display: none; }
+
+#footer_arrows {
+	display: block;
+	background-color: #00467f;
+	
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+	
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#footer #footer_links ul.menu,
+#footer #mobile_footer ul.menu
+ { 
+	list-style-type: none;
+	margin: 0px;
+	font-size: 12px;
+}
+
+#footer #mobile_footer {
+	overflow: auto;
+	background: #E8EFF7;
+	border-top: 1px solid #00467F;
+	padding: 3px;
+	
+}
+
+#footer #footer_links ul.menu li,
+#footer #mobile_footer ul.menu li {
+	padding: 0px;
+	margin-left: 15px;
+	float: left;
+} 
+#footer #mobile_footer ul.menu li {
+	font-size: 16px;
+}
+
+#footer #footer_links ul.menu li a {
+	text-decoration: none;
+}
+
+
+#footer  #footer_links ul.menu li a.social_link {
+	padding-left: 20px;
+	height:16px;
+	display: block;
+
+}
+
+#footer > #footer_links ul li a.twitter {
+	background: url(../img/social_twitter.png) no-repeat 0 0;
+}
+
+#footer > #footer_links ul li a.facebook {
+	background: url(../img/social_facebook.png) no-repeat 0 0;
+}
+#footer > #footer_links ul li a.blog {
+	background: url(../img/social_blog.png) no-repeat 0 0;
+}
+#footer > #footer_links ul li a.rss {
+	background: url(../img/social_rss.png) no-repeat 0 0;
+}
+#footer > #footer_links ul li a.linkedin {
+	background: url(../img/social_linkedin.png) no-repeat 0 0;
+}
+#footer > #footer_links ul li a.youtube {
+	background: url(../img/social_youtube.png) no-repeat 0 0;
+}
+
+
+/* Main browse page */
+/* On this page, we show only the sidebar instead of only the main content */
+.page-node-35 #internal_sidebar {
+	display: block;
+}
+.page-node-35 #internal_content {
+	display: none;
+}
+
+
+
+/* Browse Library pages */
+
+.page-browse-library h2.with-tabs { 
+	display: none;
+}
+
+/* Make this big and red */
+
+.page-browse-library #main #internal_content .region-content  .browse-results h2 {
+	color: #b32317;
+	font-family: "Verdana", "Sans Serif";
+	font-size: 28px;
+	font-weight: 100;
+	margin-bottom: 25px;
+}
+
+.page-browse-library #main #internal_content .region-content  .browse-results li {
+	border: 1px solid #808080;
+	margin-bottom:0;
+	padding: 10px 20px;
+	background: none;
+	overflow: auto;
+	border-bottom:0px;
+
+}
+
+.page-browse-library #main #internal_content .region-content  .browse-results li:last-child {
+	border-bottom: 1px solid #808080;
+}
+
+.page-browse-library #main #internal_content .region-content  .browse-results li a {
+	display: block;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.page-browse-library #main #internal_content .region-content  .browse-results li a .imagewrapper {
+	width: 50px;
+	margin-right: 20px;
+	float: left;
+}
+
+.page-browse-library #main #internal_content .region-content  .browse-results li a .imagewrapper img {
+	max-width: 100%;
+}
+
+
+
+
+
+/* FIX THIS - block id may change */
+/* Make top header red */
+.page-node-35 #block-block-17 h2 {
+	color: #b32317;
+	font-family: "Verdana", "Sans Serif";
+	font-size: 28px;
+	font-weight: 100;
+	margin-bottom: 25px;
+}
+
+
+.page-node-35 #internal_sidebar #block-views-api-categories-block-block h2 { 
+	/* See SIDEBAR STYLES */
+}
+.page-node-35 #internal_sidebar #block-views-api-categories-block-block .view-header {
+	display: none;
+}
+
+.page-node-35 #internal_sidebar #block-views-api-categories-block-block .views-row {
+	padding: 15px;
+	font-size: 18px;
+	border-bottom:1px solid #CCC;
+}
+
+
+
+/* Features Page */
+.popup.big-camera{
+	float: left;
+	margin-right: 30px;
+	margin-top: 5px;
+}
+.features-list{
+ 	overflow: auto;
+ 	margin-top: 10px;
+}
+
+.features-list h3.popup{
+     font-size: 15px;
+     
+     background: url(../img/demo-large.png) no-repeat center left;
+     background-size: 45px 20px;
+     
+     padding-left: 55px;
+     margin-bottom: 5px;
+     margin-top: 30px;
+}
+.features-list p{
+	 font-size: 13px;
+}
+#internal_content .region-content .features-list ul{
+	padding-left: 0px;
+	margin-top: 5px;
+	
+}
+#internal_content .region-content .features-list ul li {
+     font-size: 13px;
+     background-size: 6px 6px;
+     padding-left: 15px;
+     margin-bottom: 5px;
+}
+
+
+
+/* popup windows */
+h1.popup,
+h2.popup,
+h3.popup,
+div.popup,
+span.popup,
+p.popup {
+  cursor: pointer;
+}
+
+#fadeout { 
+	position: absolute;
+	top: 0px; 
+	left: 0px; 
+	z-index: 1000; 
+	width: 100%; 
+	height: 100%; 
+	background: rgba(200,225,255,0.5);
+}
+
+#popup {
+	position: absolute; 
+	top: 150px; 
+	z-index: 10001; 
+	width: 760px; 
+	margin: 0px auto; 
+	background: #FFF;
+	border: 2px solid #00467f;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+
+#popup  #popup_header {
+
+/* 	background: url(../img/logo.png) #00467f no-repeat 15px 15px; */
+/* 	height: 50px; */
+/* 	padding: 15px; */
+	
+}
+
+#popup  #popup_header  a.close_popup{
+	
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	text-decoration: none;
+	
+	border-radius: 50px;
+	background-color: rgb(114, 153, 185);
+	color: #fff;
+	
+	padding-top: 0px;
+	padding-bottom: 2px;
+	padding-left: 6px;
+	padding-right: 6px;
+	
+	font-size: 15px;
+}
+
+
+#popup div.body {
+	padding: 40px 20px;
+
+}
+
+#popup div.body object,
+#popup div.body embed,
+#popup div.body iframe
+ {
+	display: block;
+	margin-left: auto;
+	margin-right:auto;
+	max-width: 100%;
+}
+
+
+/* On an iPhone, we don't need the header to appear, and the popup should be bigger */
+
+/*
+.breakpoint-320 #popup #popup_header { 
+	display: none;
+}
+*/
+.breakpoint-320 #popup {
+	border:0;
+	width: 100%;
+}
+
+
+.breakpoint-320 #popup div.body {
+	padding: 20px 10px 10px;
+
+}
+
+
+/* Publisher page list of logos */
+
+/* header on publisher page */
+#main #internal_content .region-content #node-145 .content h2 {
+	font-size:20px;
+}
+
+#block-views-publishers-block-1 .view-display-id-block_1 {
+	overflow:auto;
+	margin-bottom: 20px;
+}
+
+#block-views-publishers-block-1 h2 { 
+	display: none;
+}
+
+/* publisher list */
+.page-node-145 .view-display-id-block_1 .views-row  {
+	float: left;
+	padding: 0px;
+}
+
+
+/* Publisher grid */
+a.publisher_logo {
+	display: block;
+	background-repeat: none;
+	background-position: bottom left;
+	width: 103px;
+	height: 78px;
+	margin:10px;
+	opacity: 0.6;
+	filter:Alpha(opacity=60);
+}
+
+a.publisher_logo:hover {
+	background-position: top left;
+	opacity: 1;
+	 filter:Alpha(opacity=100);
+
+}
+
+
+/* remove indent on bullets on publisher list page */
+#internal_content .region-content #node-145 ul {
+	padding-left: 0px;
+}
+
+
+/* /webcasts page */
+
+#node-34
+{
+	margin-bottom:20px;
+}
+.page-node-34{
+	
+}
+.page-node-34 #internal_content .region h2 {
+	font-size: 18px;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+.page-node-34 .node-webcast > h2{/*temp fix, this should not be printed on the serverside */
+	display: none;
+}
+
+.page-node-34 #internal_content .region h3{
+		
+}
+
+.page-node-34 .webcast-info .button{
+	
+}
+
+.page-node-34 .view-display-id-block_2 .views-row {
+	clear:both;
+	overflow: auto;
+	margin-bottom: 30px;
+}
+
+.page-node-34 .view-display-id-block_2 .views-row .views-field-field-webcast-image { 
+	float: left;
+	width: 75px;
+	margin-right: 25px;
+}
+.page-node-34 .view-display-id-block_2 .views-row .views-field-field-webcast-image img {
+	width: 75px;
+	height: auto;
+} 
+
+
+.page-node-34 .view-display-id-block_2 .views-row span.views-label { 
+	float: left;
+	margin-right: 10px;
+}
+
+.page-node-34 .view-display-id-block_2 .views-row .views-field-title,
+.page-node-34 .view-display-id-block_2 .views-row .views-field-field-webcast-featuring,
+.page-node-34 .view-display-id-block_2 .views-row .views-field-field-webcast-date,
+.page-node-34 .view-display-id-block_2 .views-row .views-field-view-node {
+	font-size: 12px;
+	margin-bottom: 3px;
+
+}
+
+.page-node-34 .views-row .views-field-title a { 
+	color: #000;
+	font-weight: bold;
+}
+
+
+.page-node-34 .views-row .views-field-view-node {
+	font-weight: bold;
+}
+
+
+
+
+/* webcast styles */
+
+/* Latest webcast */
+#block-views-webcast-block-1 {
+	margin-bottom:30px;	
+
+}
+
+#block-views-webcast-block-1 ul.links {
+	clear: both;
+	
+}
+
+/* Previous webcasts */
+#block-views-webcast-block-2 {
+	clear: both;
+}
+
+.webcast_info  h3{
+	font-size: 17px;
+	margin-bottom: 3px;
+}
+.node-webcast a.button{
+	
+	width: 120px;
+	height: 20px;
+	margin-top: 15px;
+
+	text-decoration: none;
+	display: block;
+	font-family: "DIN Medium", "Verdana", "Sans Serif";
+	font-size: 18px;
+	font-weight: 100;
+	text-transform:uppercase;
+	text-align: center;
+	border-radius: 5px;
+	padding: 5px 2px;	
+	
+}
+.node-webcast .submitted{
+	display: none;
+}
+.node-webcast .webcast_info{
+	float: left;
+	width: 50%;
+}
+
+.node-webcast .webcast_info #embed {
+  display: none;
+}
+
+.field-name-field-webcast-image{
+	margin-right: 30px;
+	float: left;
+}
+
+.field-name-field-webcast-image img {
+	width: 120px;
+	height: auto;
+}
+
+.node-webcast .field-type-image .field-label{
+	display: none;	
+}
+.field-name-field-webcast-date{
+	
+}
+.node-webcast .field-name-body{
+	padding-top: 25px;
+}
+.node-webcast .field-label{
+	font-size: 12px;
+	font-weight: normal;
+	float: left;
+}
+.node-webcast .field-item{
+	font-size: 12px;
+}
+
+
+/* Salesforce webcast register form */
+
+.node-type-webcast .block-sbo-salesforce {
+	margin-top: 20px;
+}
+
+.node-type-webcast .block-sbo-salesforce h2 { 
+	font-size: 17px;
+	margin-bottom:20px;
+}
+
+.node-type-webcast .block-sbo-salesforce .content table { 
+	margin-bottom: 30px;
+}
+
+.node-type-webcast .block-sbo-salesforce .content td.inputLabel  input{
+	margin-bottom: 10px;
+} 
+
+.node-type-webcast .disclaimers{
+	font-size: 11px;
+}
+
+
+.block-sbo-salesforce .content form {
+	overflow: auto;
+}
+
+.block-sbo-salesforce .content form #emailOptOut { 
+
+	margin-right: 5px; 
+}
+.block-sbo-salesforce .content .button {
+	float: left;
+	margin-left: 0;
+}
+
+/* salesforce form validation */
+#errors {
+	background-color:#00467F;
+	color:#fff;
+	padding:20px 20px 20px 20px !important;
+	margin:15px auto;
+	display:none;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;			
+}
+#errors p, #errors li {
+    line-height:125%;
+    margin-bottom:10px !important;
+}
+#errors ul {
+	padding-left:0 !important;
+	margin:10px 0 !important;
+}
+
+/* title */
+#errors h2 {
+	margin:0 0 20px 0 !important;
+	color:white;
+}
+
+
+/* Make the salesforce inputs the right size */
+.salesforce-form .inputRegular,
+.salesforce-form .dropdownMenu,
+.salesforce-form .textareaRegular
+  {
+	width: 90%;
+	margin-bottom: 10px;
+}
+
+
+.form_wrapper div.inputLabel {
+	width: 45%;
+	margin-right: 5%;
+	float: left;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.form_wrapper div.inputLabel input,
+.form_wrapper div.inputLabel select 
+{
+	width: 90%;
+}
+
+
+
+/* Whitepapers listing page  */
+	
+.view-white-pages{/* content area for white pages */
+	
+}
+.view-white-pages .views-row{
+	margin-bottom: 30px;
+}
+
+.views-field-field-whitepage-image{
+	float: left;      
+	margin-top:4px;
+	height: 0px;
+}
+.view-white-pages .views-field-title,
+.view-white-pages .views-field-field-whitepage-sub,
+.view-white-pages .views-field-body,
+.view-white-pages .views-field-field-asset-pdf,
+.view-white-pages .views-field-view-node
+{
+	margin-left: 100px;
+	font-size: 13px;
+
+}
+.view-white-pages .views-field-title{
+	margin-bottom: 10px;
+}
+.view-white-pages .views-field-title span {
+	display: block;
+}
+
+.view-white-pages .views-field-title a{
+	color: #000;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 700;
+}
+.view-white-pages .views-field-body{
+	margin-bottom: 5px;
+}
+.view-white-pages .views-field-field-asset-pdf img{
+	display: none;
+}
+.view-white-pages .views-field-field-asset-pdf a{
+	text-decoration: none;
+}
+.page-white-pages .item-list .pager{
+  text-align: left;	
+}
+.page-white-pages .item-list .pager-item a{
+  color: #039;
+  text-decoration: none;
+  font-size: 14px;
+}
+.page-white-pages .pager-next a,
+.page-white-pages .pager-previous a{
+  text-decoration: none;
+  color: #039;
+  text-transform: capitalize;
+}
+.page-white-pages .pager-last,
+.page-white-pages .pager-first{
+	display: none;
+}
+
+
+
+/* Whitepaper node */
+
+.whitepage_info  h3{
+	font-size: 17px;
+	margin-bottom: 3px;
+}
+.node-whitepage a.button{
+	
+	width: 120px;
+	height: 20px;
+	margin-top: 15px;
+
+	text-decoration: none;
+	display: block;
+	font-family: "DIN Medium", "Verdana", "Sans Serif";
+	font-size: 18px;
+	font-weight: 100;
+	text-transform:uppercase;
+	text-align: center;
+	border-radius: 5px;
+	padding: 5px 2px;	
+	
+}
+.node-whitepage .submitted{
+	display: none;
+}
+.node-whitepage .whitepaget_info{
+	float: left;
+	width: 50%;
+}
+
+.field-name-field-whitepage-image{
+	margin-right: 30px;
+	float: left;
+}
+
+.field-name-field-whitepage-image img {
+	width: 120px;
+	height: auto;
+}
+
+.node-whitepage .field-type-image .field-label{
+	display: none;	
+}
+
+.node-whitepage .field-name-body{
+	padding-top: 25px;
+}
+.node-whitepage .field-label{
+	font-size: 12px;
+	font-weight: normal;
+	float: left;
+}
+.node-whitepage .field-item{
+	font-size: 12px;
+}
+
+
+/* Salesforce white paper register form */
+
+.node-type-whitepage .block-sbo-salesforce {
+	margin-top: 20px;
+}
+
+.node-type-whitepage .block-sbo-salesforce h2 { 
+	font-size: 17px;
+	margin-bottom:20px;
+}
+
+.node-type-whitepage .block-sbo-salesforce .content table { 
+	margin-bottom: 30px;
+}
+
+.node-type-whitepage .block-sbo-salesforce .content td.inputLabel  input{
+	margin-bottom: 10px;
+} 
+
+.node-type-whitepage .disclaimers{
+	font-size: 11px;
+}
+
+
+
+/* press page */
+.page-node-32 .view-press-release{
+		
+}
+.page-node-32 .view-display-id-block_1 .views-field-title a{	
+	text-decoration: none;
+	color: #000;
+	font-size: 18px;
+	font-weight: 700;
+}
+.page-node-32 .view-display-id-block_1 .views-field-title{
+
+}
+.page-node-32 .view-display-id-block_1 .views-field-field-press-subtitle{
+	margin-top: 3px;
+	margin-bottom: 20px;
+}
+.page-node-32 .view-display-id-block_1 .views-field-field-press-location,
+.page-node-32 .view-display-id-block_1 .views-field-field-press-date{
+	font-weight: 700;
+}
+.page-node-32 .view-display-id-block_1 .views-field-body{
+	margin-top: 5px;
+}
+.page-node-32 .view-display-id-block_1 .views-field-view-node .field-content{
+      display: block;	
+      margin-top: 5px;
+}
+.page-node-32 .view-display-id-block_1  .field-content a{
+	text-decoration: none;
+	font-weight: bold;	
+}
+/* news page */
+
+
+.page-news .region-content .view-id-in_the_news .views-field-field-news-source {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.page-news .region-content .view-id-in_the_news .views-field-field-news-date {
+	font-weight: bold;
+	font-size:14px;
+}
+
+.page-news .region-content .view-id-in_the_news .views-field-title{
+ 	margin-bottom: 10px;
+}
+.page-news .region-content .view-id-in_the_news .views-field-title a{
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold; 
+}
+.page-news .region-content .views-field-nothing a{
+	text-decoration: none;
+	font-size: 14px;
+	color: #039;
+}
+.page-news .region-content-bottom{
+ 	margin-top: 30px;
+}
+.page-news .region-content-bottom #block-views-in-the-news-block-2 h2{
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.page-news .region-content-bottom .field-content{
+
+	display: block;
+	font-size: 12px;
+
+	margin-left: 40%;
+}
+
+.page-news .region-content-bottom .field-content p {
+	font-size: 12px;
+}
+
+.page-news .region-content-bottom .views-field-field-news-date .field-content {
+	font-weight: bold;
+  width: 40%;
+  float: left;
+  margin-left: 0;
+}
+
+.page-news .region-content-bottom .views-field-title a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.page-news .region-content-bottom .views-row {
+	margin-bottom:20px;
+}
+
+.page-news .region-content-bottom .views-field-field-news-source {
+	font-weight: bold;
+}
+
+
+/* news/[year] */
+.page-news.page-news- .region-content .view-id-in_the_news .field-content {
+    font-size: 12px;
+	display: block;
+	margin-left: 40%;
+
+}
+
+.page-news.page-news- .region-content  .view-id-in_the_news .views-field-field-news-date .field-content {
+  font-weight: bold;
+  width: 40%;
+  float: left;
+  margin-left: 0;
+}
+.page-news.page-news- .region-content .view-id-in_the_news .views-field-title a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 12px;  
+    color: #039;
+}
+
+
+.page-news.page-news- .region-content-bottom .views-field-field-news-source {
+	font-weight: bold;
+}
+
+/*list of press releases*/
+#block-views-press-release-block-2{
+
+	
+}
+#block-views-press-release-block-2 > h2{
+	font-size: 18px;
+	margin-bottom: 20px;
+	margin-top: 25px;
+}
+
+#block-views-press-release-block-2 .view-content .views-row{
+	margin-bottom: 20px;
+}
+
+#block-views-press-release-block-2 .views-field-field-press-date{
+		font-size: 12px;
+		font-weight: bold;
+        display: block;
+        float: left;
+        width: 40%;
+        margin-right: 0%;
+        
+        padding-top: 5px;
+}
+
+#block-views-press-release-block-2 .view-press-release .views-field-title{
+
+  display: block;
+  float: left;
+  width: 60%;
+  margin-bottom: 20px;
+}
+#block-views-press-release-block-2 .field-content a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 12px;
+}
+#block-views-press-release-block-2 .item-list .pager{
+  text-align: left;	
+}
+#block-views-press-release-block-2 .item-list .pager-item a{
+  color: #039;
+  text-decoration: none;
+  font-size: 14px;
+}
+#block-views-press-release-block-2 .pager-next a,
+#block-views-press-release-block-2 .pager-previous a{
+  text-decoration: none;
+  color: #039;
+  text-transform: capitalize;
+}
+#block-views-press-release-block-2 .pager-last,
+#block-views-press-release-block-2 .pager-first{
+	display: none;
+}
+
+
+
+/* press release by year  exp /press/2011*/
+
+.page-press- #internal_content{
+}
+.page-press- #internal_content .views-row{
+	margin-bottom: 20px;
+}
+.page-press- #internal_content .views-field-field-press-date{
+	font-size: 12px;
+	font-weight: bold;
+	margin-right: 10px;
+}
+.page-press- #internal_content .field-content a {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 12px;    
+}
+
+
+
+
+/* News Letters */
+#block-views-newsletters-block-1,
+#block-views-newsletters-block{
+	margin-top: 30px;
+}
+#node-146 .field-type-text-with-summary p{
+	font-size: 13px;
+}
+#block-views-newsletters-block-1,
+#block-views-newsletters-block{
+	font-size: 12px;
+}
+#block-views-newsletters-block-1 p,
+#block-views-newsletters-block p{
+	font-size: 12px;
+}
+#block-views-newsletters-block-1 > h2,
+#block-views-newsletters-block > h2{
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+#block-views-newsletters-block .views-field-field-newsletter-image,
+#block-views-newsletters-block-1 .views-field-field-newsletter-image{
+	float: left;
+	margin-top:4px;
+}
+#block-views-newsletters-block .views-field-field-newsletter-date,
+#block-views-newsletters-block .views-field-body,
+#block-views-newsletters-block-1 .views-field-field-newsletter-date,
+#block-views-newsletters-block-1 .views-field-body
+{
+	margin-left: 105px;
+}
+#block-views-newsletters-block .views-field-field-newsletter-date,
+#block-views-newsletters-block-1 .views-field-field-newsletter-date{
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+#block-views-newsletters-block-1 .views-row,
+#block-views-newsletters-block .views-row{
+	margin-bottom: 40px;
+	clear:both;
+}
+
+#block-views-newsletters-block .attachment
+{
+	display: block;
+	overflow: auto;
+}
+#block-views-newsletters-block-1 .attachment{
+	
+}
+
+  /* dates aligned horizontally */
+#block-views-newsletters-block-1 .attachment .views-field-field-newsletter-date,
+#block-views-newsletters-block .attachment .views-field-field-newsletter-date{
+	margin-left: 0px;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+#block-views-newsletters-block-1 .attachment .view-newsletters .views-row,
+#block-views-newsletters-block .attachment .view-newsletters .views-row{
+        float: left;
+	margin-bottom: 20px;
+	clear: none;
+}
+#block-views-newsletters-block-1 .attachment .view-newsletters .views-row.views-last-row,
+#block-views-newsletters-block .attachment .view-newsletters .views-row.views-last-row{
+	      
+}
+
+#block-views-newsletters-block-1 .attachment .views-field-field-newsletter-date,
+#block-views-newsletters-block .attachment .views-field-field-newsletter-date{
+	margin-right: 10px;
+}
+
+#block-views-newsletters-block-1 .attachment .views-field-field-newsletter-date:after,
+#block-views-newsletters-block .attachment .views-field-field-newsletter-date:after{
+	content: "|";
+	 padding-left: 10px;
+}
+#block-views-newsletters-block-1 .attachment .views-row-last .views-field-field-newsletter-date:after,
+#block-views-newsletters-block .attachment .views-row-last .views-field-field-newsletter-date:after{
+	content: "";
+}
+
+   /* second row of horizontally aligned dates */
+#block-views-newsletters-block-1 .view-content{
+	overflow: auto;
+}
+
+
+/* Newsletter archive */
+#node-300 .field-type-text-with-summary p{
+	font-size: 13px;
+}
+#internal_content #block-views-newsletters-block-3 > h2{
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 20px;	
+        margin-top: 30px;
+}
+#internal_content #block-views-newsletters-block-4 > h2{
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 20px;	
+        margin-top: 40px;
+}
+.page-node-300 #internal_content h3{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.page-node-300  #internal_content .view-id-newsletters .views-row{
+	display: inline;
+	margin-bottom: 20px;
+}
+.page-node-300 #internal_content .view-id-newsletters .views-row:after{
+	content: "|";
+}
+.page-node-300 #internal_content .view-id-newsletters .views-row.views-row-last:after{
+	content: "";
+}
+
+
+
+/* management page */
+
+
+ .node-personnel > h2 a {
+	text-decoration: none;
+	color: #000;
+	font-size: 20px;
+	line-height: 100%;
+	
+}
+#main #internal_content .region-content .content .node-personnel > h2{
+	margin-bottom: 6px;
+	margin-top: 0;
+
+}
+.node-personnel {
+	margin-bottom: 35px;
+}
+.node-personnel  .field:first-child {/* job title */
+	font-weight: bold;
+	font-size: 13px;
+	margin-bottom: 15px;
+}
+.node-personnel a{
+	text-decoration: none;
+}
+.node-personnel a{
+	text-decoration: none;
+}
+.node-personnel p{
+	font-size: 13px;
+}
+
+
+
+
+/* Testimonials page */
+.page-node-241{
+	
+}
+.page-node-241 .content > .field,
+.page-testimonials .content > .field
+{ /*intro at top*/
+	margin-bottom: 20px;	
+}
+.page-node-241 .content > .field p,
+.page-testimonials  .content > .field p
+{ /*intro at top*/
+	font-size: 14px;	
+}
+
+.page-node-241 #main .views-row,
+.page-testimonials #main .views-row
+{
+	margin-bottom: 30px;
+	min-height: 60px;
+}
+.page-node-241 p,
+.page-testimonials  p
+{
+	font-size: 12px;
+}
+.page-node-241 #block-views-testimony-block-2 > h2,
+.page-node-241 #block-views-testimony-block-3 > h2,
+.page-testimonials #block-views-testimony-block-2 > h2,
+.page-testimonials #block-views-testimony-block-3 > h2
+{
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.page-node-241 .views-field-field-testimonial-image,
+.page-testimonials .views-field-field-testimonial-image {
+      height: 1px;
+      float: left;
+      width: 100px;
+      /*text-align: center;*/
+}
+
+.page-node-241 .views-field-field-testimonial-image img,
+.page-testimonials  .views-field-field-testimonial-image img {
+
+	max-width: 68px;
+	border:1px solid #333333;
+}
+
+.page-node-241 .views-field-field-testimonial-image img.bubble,
+.page-testimonials  .views-field-field-testimonial-image img.bubble
+ {
+	border:0;
+}
+
+.page-node-241 .views-field-field-testimonial-logo,
+.page-testimonials .views-field-field-testimonial-logo
+ {
+	float: right;
+	margin-left: 20px;
+}
+
+.page-node-241 .views-field-field-testimonial-logo img,
+.page-testimonials .views-field-field-testimonial-logo img
+
+ {
+	max-width: 68px;
+	border:1px solid #333333;
+
+}
+
+
+.page-node-241 .views-field-field-testimonial-quote,
+.page-node-241 .views-field-field-testimonial-from,
+.page-testimonials  .views-field-field-testimonial-quote,
+.page-testimonials  .views-field-field-testimonial-from
+{
+    margin-left: 100px;
+    display: block;
+}
+
+
+.page-node-241 .views-field-field-testimonial-from,
+.page-node-241 .views-field-field-testimonial-pos,
+.page-testimonials .views-field-field-testimonial-from,
+.page-testimonials .views-field-field-testimonial-pos{
+
+	font-weight: bold;
+	font-size: 12px;
+}
+.page-node-241 .views-field-field-testimonial-quote,
+.page-testimonials.views-field-field-testimonial-quote
+{
+	margin-bottom: 10px;	
+}
+.page-node-241 .views-field-field-testimonial-quote p:before,
+.page-testimonials .views-field-field-testimonial-quote p:before
+{
+	content: ".";
+	text-indent: -999999px;
+	text-transform: capitalize;
+	background-image: url(../img/open-paren-gold.png);
+	background-repeat: no-repeat;
+	color: rgba(0, 0, 0, 0);
+	padding-right: 15px;
+	margin-right: 5px;
+	height: 30px;
+	width: 20px;
+}
+.page-node-241 .views-field-field-testimonial-quote p:after,
+.page-testimonials .views-field-field-testimonial-quote p:after
+{
+	content: ".";
+	text-indent: -999999px;
+	text-transform: capitalize;
+	background-image: url(../img/close-paren-gold.png);
+	background-repeat: no-repeat;
+	color: rgba(0, 0, 0, 0);
+	margin-left: 5px;
+	padding-left: 30px;
+	height: 30px;
+	width: 20px;
+}
+
+.page-node-241 .view-footer a,
+.page-testimonials .view-footer a
+{
+	min-height: 11px;
+	
+	display: block;
+	
+	background-image: url('../img/bullet-style-arrow.png');
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+	
+	padding-left: 40px;
+	padding-top: 10px;
+	margin-bottom: 35px;
+	margin-top: 10px;
+	text-decoration: none;
+	
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+
+
+/* testimonials form */
+/*testimonial submission form & submit-testimonial-creative-edge*/
+
+.webform-client-form .webform-component-textfield,
+.webform-client-form .webform-component-email{
+	padding-top: 15px;	
+}
+
+.webform-client-form .webform-component-textfield input, 
+.webform-client-form .webform-component-email input, 
+{
+	width: 100%;
+}
+
+.webform-client-form .form-item, 
+.webform-client-form .form-actions,
+{
+	padding-bottom: 15px;	
+}
+
+.webform-client-form .webform-container-inline div, .webform-client-form .webform-container-inline div.form-item{
+	display: block;
+}
+
+.webform-client-form input[type="checkbox"]{
+	margin-right: 20px;
+}
+
+
+/* case studies page */
+.view-case-studies .views-row{
+	margin-bottom: 30px;
+}
+.view-case-studies p{
+	font-size: 13px;
+}
+.view-case-studies .views-field-field-thumbnail-image{
+	float: left;
+	height: 20px; /*prevents margin issues*/
+}
+.view-case-studies .views-label-field-thumbnail-image{
+	display: none;
+}
+.view-case-studies .views-field-title,
+.view-case-studies .views-field-body,
+.view-case-studies .views-field-field-asset-pdf
+{
+	margin-left: 100px;
+}
+.view-case-studies .views-field-title{
+	margin-bottom: 10px;
+}
+.view-case-studies .views-field-title a{
+	color: #000;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 700;
+}
+.view-case-studies .views-field-body{
+	margin-bottom: 5px;
+}
+.view-case-studies .views-field-field-asset-pdf img{
+	display: none;
+}
+.view-case-studies .views-field-field-asset-pdf a{
+	text-decoration: none;
+}
+.view-case-studies .views-field-view-node a{
+	text-decoration: none;	
+}
+.view-case-studies .item-list .pager{
+  text-align: left;	
+}
+.view-case-studies .item-list .pager-item a{
+  color: #039;
+  text-decoration: none;
+  font-size: 14px;
+}
+.view-case-studies .pager-next a,
+.view-case-studies .pager-previous a{
+  text-decoration: none;
+  color: #039;
+  text-transform: capitalize;
+}
+.view-case-studies .pager-last,
+.view-case-studies .pager-first{
+	display: none;
+}
+
+
+
+/* Subscription Options Grid */
+
+ #internal_content .region-content  #subscriptions_info_list {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+ #internal_content .region-content  #subscriptions_info_list li {
+	background-image: none;
+	padding-left:0;
+}
+#subscriptions_info_list li h2{
+	/* see generic style below SIDEBAR STYLE HEADLINES */
+}
+
+#subscriptions_info_list li p{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 110px;
+	margin-right:20px;
+}
+#subscriptions_info_list li p a{
+	text-decoration: none;
+}
+#subscriptions_info_list a.button{
+	margin-top: 15px;
+	font-size: 18px;
+	width: 150px;
+	margin-left:20px;
+}
+
+
+#internal_content .region-content #subscriptions_info_list li.indiv_gold_icon{
+	background-image: url(../img/individual_gold.png);
+	background-position: 45px 90px;
+}
+#internal_content .region-content #subscriptions_info_list li.org_gold_icon{
+	background-image: url(../img/org_gold.png);
+	background-position: 30px 90px;
+}
+#internal_content .region-content #subscriptions_info_list li.govt_gold_icon{
+	background-image: url(../img/gov_gold.png);
+	background-position: 23px 90px;
+}
+#internal_content .region-content #subscriptions_info_list li.lib_gold_icon{
+	background-image: url(../img/library_gold.png);
+	background-position: 35px 110px;
+}
+#internal_content .region-content #subscriptions_info_list li.creative_edge_icon{
+	background-image: url(../img/creative_edge_icon.png);
+	background-size: 85px;
+	background-position: 16px 90px;	
+} 
+
+
+/* On iPhone, many of the main content headlines are styled in the same way as the SIDEBAR headlines for bigger browsers */
+/* SIDEBAR STYLE HEADLINES */
+#subscriptions_info_list li h2,
+#block-views-testimony-block h2,
+#publisher_list h2,
+.page-node-3 #main #internal_content .region-content .content h2,
+.page-node-27 #main #internal_content .region-content .content h2.red-header,
+#mobile_search_preview h2,
+.page-node-35 #internal_sidebar #block-views-api-categories-block-block h2 
+ {
+	padding: 15px;
+	color: #00467f;
+	font-size: 20px;
+	text-align: center;
+	
+	background: url(../img/lightbluegradient.png) repeat-x #a4c0d7;
+	border:1px solid #00467f;
+	margin-left:0;
+	margin-right:0;
+}
+
+
+
+
+/* Resize image from about us page */
+.page-node-4 #block-system-main img { width: 100%; }
+
+
+
+/* Remove subscription options from Get Started page */
+.page-node-3 #subscriptions_info_list {
+	/*display: none;*/
+}
+
+
+
+
+.node-type-page #main #internal_content .region-content .content h2.goldvideo {
+	margin-bottom:10px;
+	font-size: 20px;
+	background: url(../img/goldvideo.png) no-repeat;
+	padding: 0px 0px 10px 70px;
+}
+
+/* PARTNER PAGE */
+
+.views-field-field-partner-logo {
+	margin-top: 10px;
+	margin-bottom:10px;
+}
+
+
+/* EVENTS PAGES */
+
+.view-events.view-display-id-page .views-row {
+	margin-bottom: 40px;
+}
+
+.view-events.view-display-id-block .views-row img { 
+	margin-top: 5px;
+}
+#main #internal_content .region-content .content .view-content span.event_booth { 
+	margin-bottom: 25px;
+	display: block;
+}
+#main #internal_content .region-content .content .view-content h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#main #internal_content .region-content .content .view-events.view-display-id-page .views-row h2 { 
+	font-size: 20px;
+	margin-bottom:5px;
+} 
+
+
+.view-events.view-display-id-page .views-row span.event_dates,
+.view-events.view-display-id-page .views-row span.event_booth,
+.view-events.view-display-id-page .views-row span.event_location,
+.view-events.view-display-id-page .views-row span.event_stand {
+	display: block !important;
+	margin-bottom:5px;
+}
+
+
+/* main search results */
+
+.page-search-site #tabs-wrapper h2 {
+	display:none;
+}
+
+#block-nodeblock-385 h2 {
+	color: #b32317;
+	font-family: "Verdana", "Sans Serif";
+	font-size: 28px;
+	font-weight: 100;
+	margin-bottom: 25px;
+}
+#block-nodeblock-385 li{
+	border: 1px solid #808080;
+	margin-bottom:0;
+	padding: 10px 20px;
+	background: none;
+	overflow: auto;
+	border-bottom:0px;
+	display: block;
+	clear: both;
+	min-width: 280px;
+	max-width: 440px;
+}
+
+#block-nodeblock-385 li:last-child {
+	border-bottom: 1px solid #808080;
+}
+
+#block-nodeblock-385 li a {
+	display: block;
+	font-weight: bold;
+	font-size: 15px;
+	
+}
+
+#block-nodeblock-385 li a .imagewrapper {
+	width: 50px;
+	margin-right: 20px;
+	float: left;
+}
+#block-nodeblock-385 li a .imagewrapper img {
+	max-width: 100%;
+}
+
+.region-content .iphone.button{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: block;
+	width: 70%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 20px;
+}
+.region-content .iphone.blue.button,
+.region-content .iphone.red.button{
+	font-size: 20px;
+}
+
+blockquote { margin-left: 40px; }
+
+
+/* federated search */
+#main #internal_content .region-content .content #search-results-wrapper h2 {
+	color: #B32317;
+	font-family: "Verdana",   "Sans Serif";
+	font-size: 28px;
+	font-weight: 100;
+	margin-bottom: 25px;
+	width:100%;
+}
+
+#search-results-wrapper li.search-result{
+
+	border: 1px solid #808080;
+	margin-bottom:0;
+	padding: 10px 20px;
+	background: none;
+	border-bottom:0px;
+	word-wrap: break-word 
+}
+
+#search-results-wrapper  li.search-result:last-child {
+	border-bottom: 1px solid #808080;
+}
+#search-results-wrapper .search-result h3.title,
+#search-results-wrapper .search-result strong{
+ 	font-size: 14px;
+}
+#search-results-wrapper .search-result h3.title a{
+	display: block;
+}
+#search-results-wrapper .search-result p{
+	font-size: 14px;
+}
+#search-results-wrapper .search-result a{
+	display: none;
+}
+.search-results .search-snippet-info {
+	padding-left: 0px;
+}
+
+
+#secondary_navigation ul.toggle li#back-to-books{
+	display: none;/*initialize display to none */
+	background-image: url('../img/mobile-arrow-left.png');
+	background-repeat: no-repeat;
+	background-position: 10px center;
+}
+#secondary_navigation ul.toggle li#back-to-books a { 
+	background-image: none;
+	margin-left: 40px;
+}
+.view-id-site_map .field-content a {
+	text-decoration: none;
+	font-weight: lighter;
+	font-size: 12px;
+}
+
+
+
+
+
+/* sitemap */
+
+.view-id-site_map .view-content .item-list{
+	margin-bottom: 25px;
+}
+
+.view-id-site_map h3 {
+	font-size: 13px;
+	color: #039;
+	margin-bottom: 10px;
+}
+#internal_content .region-content .view-id-site_map ul{
+	padding-left: 0px !important;
+	margin-top: 0px;
+}
+
+#internal_content .region-content .view-id-site_map  ul li {
+	min-height: 10px;
+	line-height: 100%;
+	background-image: none !important;
+
+	padding-left: 0px !important;
+	margin-bottom: 10px !important;
+	font-size: 12px;
+	list-style-type: none;
+}
+
+
+
+/* Show and hide pieces of the site based on which breakpoint the user is seeing */
+/* This is used to truncate text in the nav, hero, and on subscription pages */
+
+.iphone { display:none; }
+.ipad { display: none; }
+.desktop { display: none; }
+.iphonehide { display:none; }
+
+.breakpoint-320 .iphone { display: inline;  }
+.breakpoint-768 .ipad { display: inline;  }
+.breakpoint-1024 .desktop { display: inline;  }
+
+
+.breakpoint-320 p.iphone { display: block; }
