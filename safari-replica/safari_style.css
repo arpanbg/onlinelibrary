@@ -8,7 +8,7 @@
 }
 #global_navigation img.img_wrapper {
 	height: auto;
-	width: 100px;
+	width: 112px;
 }
 
 div.wrapper {
@@ -35,10 +35,8 @@ div.wrapper div#header {
 
 div.wrapper div#header h1 {
 	padding:0px;
-	font-size:18px;
-	width:100px;
-	float:none;
 	margin:0px;
+	width:112px;
 	overflow:auto;
 	height:auto;
 	float: left;
