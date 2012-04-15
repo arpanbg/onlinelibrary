@@ -72,6 +72,7 @@ p, li {
 	text-align:right;
 	position:relative;
 	height:20%;
+	background-color:#000fff;
 }
 
 #signin-container label {
@@ -82,15 +83,17 @@ p, li {
 
 #menu-search-signin-container #menu-search-container {
 	width:auto;
-	margin:1% 0% 1% 0%;
+	margin:0% 0% 0% 0%;
+	padding:0% 0% 0% 0%;
 	border:1pt dashed;
 	border-color:#fff;
-	min-height:80%;
+	
+	height:80%;
 	position:relative;
 }
 
 #menu-search-container #menu-container {
-	width:auto;
+	width:60%;
 	float:left;
 	border:1pt dashed;
 	border-color:#fff;
@@ -101,6 +104,7 @@ p, li {
 
 #menu-container ul, #search-container ul {
 	list-style-type:none;
+	padding:0px;
 }
 
 #menu-container ul li {
@@ -116,14 +120,15 @@ p, li {
 	color:#fff;
 	font-size:14px;
 	margin-left:0em;
+	margin-bottom:0%;
 }
 
 #search-container ul li input[type="text"] {
-	width:200px;
+	width:75%;
 }
 
 #menu-search-container #search-container {
-	width:auto;
+	width:38%;
 	float:right;
 	margin-right:0%;
 	border:1pt dashed;
