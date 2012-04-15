@@ -1,0 +1,293 @@
+/*** 01/04/2012 ***/
+/* Base style for body */
+body {
+	background: #FFF;
+	/* font-family: "Verdana", "Helvetica", "Arial", "Sans Serif"; */
+	margin:0px;
+}
+
+
+/* Base style for body text */
+
+p { margin-bottom: 10px; }
+p,li{
+ font-size: 14px;
+ line-height: 150%;    
+}
+
+p:last-child { margin-bottom: 0px; } 
+
+
+/* Header font size */
+h1 { font-size: 18px; margin-bottom:10px;} 
+
+/*** ***/
+#global_navigation {
+	background:#00467f;
+	z-index:2000;
+	position:relative;
+	padding:0pt;
+	margin:0pt;
+	min-height:100px;
+}
+#global_navigation img.img_wrapper {
+	height: auto;
+	width: 100px;
+}
+
+div.wrapper {
+	width:1010px;
+	padding:0px;
+	position:relative;
+	margin:0px auto;
+	border:0pt none;
+	outline:0pt none;
+	font-size:100%;
+	vertical-align:baseline;
+	min-height:100px;
+}
+
+div.wrapper div#header {
+	padding:12px 0px 0px 0px;
+	margin:0px;
+	border:0pt none;
+	outline:0pt none;
+	vertical-align:baseline;
+	font-size:100%;
+	min-height:100px;
+}
+
+div.wrapper div#header h1 {
+	padding:0px;
+	font-size:18px;
+	width:100px;
+	float:none;
+	margin:0px;
+	overflow:auto;
+	height:auto;
+	float: left;
+}
+div.wrapper div#header h1 a {
+	display:inline;
+}
+
+.content {
+	display:none;
+	padding:0px;
+	margin:0px;
+	border:0px;
+}
+
+div.wrapper  div#header .region-primary-navigation {
+	margin-top:0px;
+	margin-left:150px;	
+	width: auto;
+	min-height:30px;
+	margin-bottom:0px;
+	margin-right:0px;
+	padding:0px 0px 0px 0px;
+	border:0pt none;
+	outline:0pt none;
+	font-size:100%;
+	vertical-align:baseline;
+	z-index:2005;
+}
+
+div.wrapper div#header .block-menu-block {
+	padding:0px 0px 0px 0px;
+	overflow:auto;
+	width:500px;
+	/* float:left; /* used for???? */
+	margin-top:50px;
+	border:0pt none;
+	outline:0pt none;
+	font-size:100%;
+	vertical-align:baseline;
+	background:none repeat scroll 0% 0% transparent
+}
+
+div.wrapper  div#header  ul.menu { 
+	list-style-type: none;
+	margin: 0px;
+	font-size: 15px;
+	border:medium none;
+	list-style:none outside none;
+	text-align:left;
+	padding:0pt;
+	outline:0pt none;
+	vertical-align:baseline;
+}
+
+div.wrapper div#header  ul.menu  li {
+	display: block;	
+	margin: 0px;
+	margin-right:15px; /* spacing between the list items */
+	float: left;
+	list-style-image:none;
+	list-style-type:none;
+	font-size:14px;
+	line-height:150%;
+	border:0pt none;
+	outline:0pt none;
+	vertical-align:baseline;	
+}
+
+div.wrapper  div#header  ul.menu  li a { 
+	color: #FFF;
+	display: block;
+	font-size: 20px;
+	text-decoration: none;
+	/*padding:5px 12px 10px;*/
+}
+
+#secondary_navigation {
+	background:#d6e3f0;
+	min-height:16px;
+	z-index:2005;
+	position:relative;
+	border:medium none;
+	clear:both; /* find out its function?? */
+}
+#secondary_navigation.no_margin {
+	margin-bottom:0;
+	margin-top:0px;
+	border-bottom:0;
+}
+.clearer {
+	width:100%;
+	height:0px;
+	clear:both;
+}
+
+
+/*** 29-03-2012 ***/
+div.wrapper div#header .region-primary-navigation div#block-search-form {
+	float:right;
+	/* display:inline; */
+	margin:0px;
+	padding:0px;
+	clear:none;
+	background:none repeat scroll 0% 0% transparent;
+	border:0pt none;
+	outline:0pt none;
+	font-size:100%;
+	vertical-align:baseline;
+	color:rgb(51,51,51);
+}
+
+div.wrapper div#header .region-primary-navigation div#search-block-form  form{
+	width:auto;
+	margin:0pt auto;
+	overflow:auto;
+	padding:0pt;
+	border:0pt none;
+	outline:0pt none;
+	font-size:100%;
+	vertical-align:baseline;
+	background:none repeat scroll 0% 0% transparent;
+}
+
+.element-invisible {
+	display:none;
+	position:absolute !important;
+	clip:rect(1px, 1px, 1px, 1px);
+}
+
+div.wrapper div#header .region-primary-navigation div#block-search-form  .form-item-search-block-form {
+	width:180px;
+	float:left;
+	background:none repeat scroll 0% 0% rgb(255,255,255);
+	border-width:1px 0px 1px 1px;
+	border-style:solid none solid solid;
+	border-color:rgb(0, 0, 0) -moz-use-text-color rgb(0, 0, 0) rgb(0, 0, 0);
+	color:rgb(51, 51, 51);
+	font-size:13px;
+	border-bottom-left-radius:3px;
+	border-top-left-radius:3px;
+}
+
+.form-item, .form-actions {
+	margin:0px;
+	padding:0px;
+}
+
+.container-inline div, .container-inline label {
+	display:inline;
+}
+
+div.wrapper div#header .region-primary-navigation div#block-search-form input#edit-search-block-form-2 {
+	border:0;
+	padding:3px 5px 4px;
+	height:15px;
+	margin:0;
+	background-image:none;
+	-moz-border-radius-bottomleft: 3px;
+	-moz-border-radius-topleft: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-webkit-border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+	outline: none;
+}
+
+#autocomplete {
+	z-index:4;
+	position:absolute;
+}
+
+div.wrapper div#header .region-primary-navigation #autocomplete {
+	width: 270px !important;
+	margin-left: -35px;
+	border: 1px solid #004882;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius:4px;
+}
+input.form-autocomplete {
+	background-position:100% 2px;
+	background-repeat:no-repeat;
+}
+
+/*** 01/04/2012 ***/
+div.wrapper div#header a#signin {
+	display:block;
+	position:absolute;
+	top:15px;
+	right:0px;
+	/* color:#FF; */
+	color:rgb(255,255,255);
+	text-decoration:none;
+	
+	padding:5px 10px 4px 10px;
+	margin-bottom:0px;
+	font-size:14px;
+	background-color:#003265;
+	text-transform:uppercase;
+	border-radius:3px;
+	
+	border:1px solid #000;
+	font-family:"Arial Rounded MT Bold";
+	box-shadow:none;
+	vertical-align:baseline;
+}
+
+
+#signin_popup {
+	display:none;
+}
+
+#signing_popup.active {
+	top:-28px;
+}
+
+#search_toggle {
+	border:1px solid #000;
+	display:block;
+	position:absolute;
+	height:25px;
+	width:26px;
+	color:transparent;
+	text-indent:-999999px;
+	top:15px;
+	right:95px;
+}
