@@ -72,7 +72,6 @@ p, li {
 	text-align:right;
 	position:relative;
 	height:20%;
-	background-color:#000fff;
 }
 
 #signin-container label {
@@ -93,7 +92,7 @@ p, li {
 }
 
 #menu-search-container #menu-container {
-	width:60%;
+	width:50%;
 	float:left;
 	border:1pt dashed;
 	border-color:#fff;
@@ -131,6 +130,7 @@ p, li {
 	width:38%;
 	float:right;
 	margin-right:0%;
+	padding:0px;
 	border:1pt dashed;
 	border-color:#fff;
 	margin-bottom:0%;

@@ -18,11 +18,7 @@
 #vertical_section1 #section3 {
 	background:#ffffff;
 	min-height:250px;
-	/* 
-	 * 27-05-2012
-	 * just removing this margin, brought all pieces together nicely
-	 */
-	/* margin-top:300px; */
+	margin-top:300px;
 	border-style:dashed;
 	border-width:0pt;
 	z-index:2005;
@@ -52,25 +48,15 @@
 	width:inherit;
 	z-index:2015;
 	margin-left:0px;
-	/*order-color:transparent; did you mean border-color?? */
+	/*order-color:transparent;*/
 	height:59px;
 	margin-bottom:10px; 
-	
-	/* 
-	 * 27-05-2012
-	 * changed color from 0000ff to this one
-	 */
-	background:#0a709f;
+	background:#0000ff;
 	margin-top:-1px;
 	/*background-image:url('img/people-icon.png');*/
 	background-repeat:no-repeat;
-	
 	border-top-left-radius:inherit;
 	border-top-right-radius:inherit;
-	-moz-border-top-left-radius:inherit;
-	-moz-border-top-right-radius:inherit;
-	-webkit-border-top-left-radius:inherit;
-	-webkit-border-top-right-radius:inherit;
 }
 
 #section3 .horizontal_section_2 {
@@ -102,11 +88,7 @@
 
 .horizontal_section_2 a:hover {
 	text-decoration:none;
-	/* 
-	 * 27-05-2012
-	 * changed color from 00ffff to ff0000
-	 */
-	color:#ff0000;
+	color:#00ffff;
 }
 
 .horizontal_section_2 a:active{
@@ -116,13 +98,7 @@
 #section3 .horizontal_section_3 {
 	border-style:dashed;
 	border-width:0pt;
-	/* 
-	 * 27-05-2012
-	 * changed width from 208px to 100%, because there was some
-	 * gap getting left in the right side between the section and
-	 * the bucket
-	 */
-	width:100%;
+	width:208px;
 	z-index:2015;
 	margin-left:0px;
 	/*border-color:transparent;*/
@@ -132,24 +108,14 @@
 	padding-top:15px;
 	padding-bottom:15px;
 	text-align:center;
-	
 	border-bottom-left-radius:inherit;
 	border-bottom-right-radius:inherit;
-	-moz-border-bottom-left-radius:inherit;
-	-moz-border-bottom-right-radius:inherit;
-	-webkit-border-bottom-left-radius:inherit;
-	-webkit-border-bottom-right-radius:inherit;
 }
 
 .horizontal_section_3 a{
 	text-decoration:none;
 	font-size:20px;
-	/* 
-	 * 27-05-2012
-	 * a little tweak of the color from ffff00 to ffbf00
-	 * and it makes all the difference in the world! :-)
-	 */
-	background-color:#ffbf00;
+	background-color:#ffff00;
 }
 
 #section3 ul.options {
