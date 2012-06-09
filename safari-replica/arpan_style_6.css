@@ -1,0 +1,162 @@
+#vertical_section1 {
+	background:#c0c0c0;
+	min-height:1000px;
+	width:83%;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:2000;
+	position:static;
+	border-top:solid;
+	border-width:1px;
+	border-color:transparent;
+	overflow:hidden;
+}
+
+/* without using border i was not able to put section3 into vertical-section1 */
+/* The margin clears an area around an element (outside the border) */
+/* So i think without border, margins dont work correctly */
+
+#vertical_section1 #section3 {
+	background:#ffffff;
+	min-height:250px;
+	/* 
+	 * 27-05-2012
+	 * just removing this margin, brought all pieces together nicely
+	 */
+	/* margin-top:300px; */
+	z-index:2005;
+	position:relative;
+	padding-top:20px;
+	padding-bottom:20px;
+	overflow:hidden;
+	width:auto;
+	/*border-color:transparent;*/
+}
+
+#section3 .bucket {
+	border-style:solid;
+	border-width:1px;
+	border-color:#c1cdcd;
+	border-radius:5px;
+	height:248px;
+	width:23%/*223px*/;
+	min-width:223px;
+	background:#ffffff;
+	z-index:2010;
+	float:left;
+	
+	/*border-color:transparent;*/
+}
+
+#section3 .horizontal_section_1 {
+	border-style:solid;
+	border-width:0px;
+	border-color:inherit;
+	width:100%;
+	z-index:2015;
+	margin-left:0px;
+	/*order-color:transparent; did you mean border-color?? */
+	height:59px;
+	margin-bottom:10px; 
+	
+	/* 
+	 * 27-05-2012
+	 * changed color from 0000ff to this one
+	 */
+	background:#0a709f;
+	margin-top:-1px;
+	/*background-image:url('img/people-icon.png');*/
+	background-repeat:no-repeat;
+	
+	border-top-left-radius:inherit;
+	border-top-right-radius:inherit;
+	-moz-border-top-left-radius:inherit;
+	-moz-border-top-right-radius:inherit;
+	-webkit-border-top-left-radius:inherit;
+	-webkit-border-top-right-radius:inherit;
+}
+
+#section3 .horizontal_section_2 {
+	border-style:dashed;
+	border-width:0pt;
+	width:90%;
+	z-index:2015;
+	margin-left:0px;
+	margin-right:0px;
+	padding-right:10%;
+	/*order-color:transparent;*/
+	height:100px;
+	margin-top:20px;
+	margin-bottom:0px; 
+	background:#ffffff;
+	padding-top:0px;
+	font-size:15px;
+}
+
+.horizontal_section_2 a:link {
+	text-decoration:none;
+	color:#0000ff;	
+}
+
+.horizontal_section_2 a:visited {
+	text-decoration:none;
+	color:#0000ff;
+}
+
+.horizontal_section_2 a:hover {
+	text-decoration:none;
+	/* 
+	 * 27-05-2012
+	 * changed color from 00ffff to ff0000
+	 */
+	color:#ff0000;
+}
+
+.horizontal_section_2 a:active{
+	text-decoration:none;
+}
+
+#section3 .horizontal_section_3 {
+	border-style:dashed;
+	border-width:0pt;
+	/* 
+	 * 27-05-2012
+	 * changed width from 208px to 100%, because there was some
+	 * gap getting left in the right side between the section and
+	 * the bucket
+	 */
+	width:100%;
+	z-index:2015;
+	margin-left:0px;
+	/*border-color:transparent;*/
+	height:28px;
+	margin-top:10px;
+	background:#ffffff;
+	padding-top:15px;
+	padding-bottom:15px;
+	text-align:center;
+	
+	border-bottom-left-radius:inherit;
+	border-bottom-right-radius:inherit;
+	-moz-border-bottom-left-radius:inherit;
+	-moz-border-bottom-right-radius:inherit;
+	-webkit-border-bottom-left-radius:inherit;
+	-webkit-border-bottom-right-radius:inherit;
+}
+
+.horizontal_section_3 a{
+	text-decoration:none;
+	font-size:20px;
+	/* 
+	 * 27-05-2012
+	 * a little tweak of the color from ffff00 to ffbf00
+	 * and it makes all the difference in the world! :-)
+	 */
+	background-color:#ffbf00;
+}
+
+#section3 .horizontal_section2 ul.options {
+	margin-top: 0px;
+	width:85%;
+	padding:5px;
+}

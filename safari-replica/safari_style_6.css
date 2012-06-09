@@ -1,0 +1,444 @@
+/* created and last updated on 27-05-2012 */
+
+
+/* em > pt > px */
+body {
+	background:#fff;
+	margin:0px;
+	font-family:"Arial", "Verdana", "Sans Serif";
+	font-size:13px;
+	border-color:#fff;
+	border:1pt dashed;
+}
+
+p {
+	margin-bottom:10px;
+}
+
+p:last-child {
+	margin-bottom:0px;
+}
+
+p, li {
+	font-size:13px;
+	line-height:140%;
+}
+
+a {
+	color:#003399;
+	text-decoration:none;
+}
+
+a:visited {
+	color:#004499;
+}
+
+a:hover {
+	color:#6c88bb;
+}
+
+/* 
+ * 27-05-2012
+ * For now, this external container with its fixed width gives
+ * sort of stability to the page layout. On minimizing or 
+ * resizing windows, the different elements retain their relative
+ * positions, and horizontal scroll bar appears if they cannot be
+ * all viewed in the same single screen.
+ */
+ 
+#universe {
+	min-height:1000px;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	background:none repeat scroll 0% 0% rgb(192,192,192);
+}
+
+#universe #global-container {
+	margin-top:0px;
+	border:0pt none;
+	width:auto;
+	min-height:100px;
+	background:#003242;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	overflow:hidden;
+}
+
+#global-container #global-logo-menu-search-signin-container {
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	border:1pt dashed;
+	border-color:#fff;
+	min-height:inherit;
+	overflow:hidden;
+}
+
+#global-logo-menu-search-signin-container  #logo-container {
+	margin-top:1%;
+	margin-left:0%;
+	margin-bottom:1%;
+	height:80px;
+	float:left;
+	border:1pt dashed;
+	border-color:#fff;
+	width:150px;
+	display:inline;
+	position:relative;
+}
+
+#logo-container img {
+	height:inherit;
+	width:100%;
+}
+
+#global-logo-menu-search-signin-container  #menu-search-signin-container {
+	float:right;
+	display:inline;
+	margin-top:1%;
+	margin-right:0%;
+	margin-left:1%;
+	margin-bottom:0%;
+	height:80px;
+	border:1pt dashed;
+	border-color:#fff;
+	width:80%;
+	overflow:hidden;
+}
+
+#menu-search-signin-container #signin-container{
+	width:auto;
+	margin:0%;
+	border:0pt none;
+	text-align:right;
+	position:relative;
+	height:20%;
+	overflow:hidden;
+}
+
+#signin-container label {
+	margin-right:0.5%;
+	color:#fff;
+	font-size:15px;
+}
+
+#menu-search-signin-container #menu-search-container {
+	width:auto;
+	margin:0% 0% 0% 0%;
+	padding:0% 0% 0% 0%;
+	border:1pt dashed;
+	border-color:#fff;
+	overflow:hidden;
+	height:80%;
+	position:relative;
+}
+
+#menu-search-container #menu-container {
+	width:50%;
+	float:left;
+	border:1pt dashed;
+	border-color:#fff;
+	margin-bottom:0%;
+	height:inherit;
+	position:relative;
+	overflow:hidden;
+}
+
+#menu-container ul, #search-container ul {
+	list-style-type:none;
+	padding:0px;
+}
+
+#menu-container ul li {
+	display:inline;
+	color:#fff;
+	font-size:13px;
+	/* padding:0em 1em 0em 1em; */
+	/* 27-05-2012
+	 * need to find out the diff. between em and px
+	 * for some reason, em takes more space than 1px
+	 * changed to px to get better granularity of spacing
+	 * to make all the menu items come in one line
+	 */
+	padding:0px 10px 0px 10px;
+	margin-left:0em;
+}
+
+#search-container ul li{
+	display:inline;
+	color:#fff;
+	/* 
+	 * 27-05-2012
+	 * changed font size to fit all menu items in one line
+	 */
+	font-size:14px;
+	margin-left:0em;
+	margin-bottom:0%;
+}
+
+#search-container ul li input[type="text"] {
+	width:75%;
+}
+
+/* 
+ * 27-05-2012
+ * as mentioned below, need to make sum of left right margins
+ * and widths of adjacent containers amount to 100%. without
+ * this width, the submit button tries to take its own free will
+ * size (probably the 25% remaining out of 100) and then goes
+ * into the next line.
+ */
+#search-container ul li input[type="submit"] {
+	width:20%;
+	font-size:13px;
+}
+
+#menu-search-container #search-container {
+	width:38%;
+	float:right;
+	margin-right:0%;
+	padding:0px;
+	border:1pt dashed;
+	border-color:#fff;
+	margin-bottom:0%;
+	height:inherit;
+	position:relative;
+	overflow:hidden;
+}
+
+
+#universe #thin-bar, #universe #second-bar { 
+	border:0pt none;
+	width:100%;
+	margin-top:0%;
+	margin-left:auto;
+	margin-right:auto;
+	overflow:hidden;
+}
+
+.thin-color-width-pos{
+	height:8px;
+	background:#c0d2e2
+	/* #c0e0e0; */
+}
+
+.second-color-width-pos{
+	/* 
+	 * 27-05-2012
+	 * there was a position:absolute attribute present here,
+	 * which seemed to manage lateral arrangement of multiple
+	 * elements. but i don't think that is true, and the attribute
+	 * seemed useless today. have removed it.
+	 */
+	height:270px;
+	background:#0a709f;
+}
+
+/* 
+ * For two or more containers inside one bigger container,
+ * sum of left right margins and widths of the inner containers
+ * should amount to 100% or the max width of the bigger container.
+ */
+ 
+#second-bar img {
+	margin-top:2.5%;
+	margin-left:15%;
+	height:70%;
+	width:23%;
+	float:left;
+	position:static;
+}
+
+#second-bar #box{
+	display:inline;
+	padding-top:2%;
+	padding-left:2%;
+	margin-left:2%;
+	/*
+	 * 27-05-2012
+	 * removed right margin to 0%, since the label anyways has lot of
+	 * unused space in it. The text is not panning till the edge of the
+	 * label.
+	 */
+	position:static;
+	float:right;
+	text-align:left;
+	color:#fff;
+	font-size:24px;
+	width:58%;
+}
+
+#second-bar #box ul li {
+	font-size:16px;
+}
+
+#content-region {
+	width:83%;
+	min-height:84px;
+	/* 
+	 * 27-05-2012
+	 * this seems to tell me that auto margin helps to align an element in
+	 * the center of its parent container
+	 */
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+	padding:0pt;
+	border:1pt dashed;
+	outline:0pt none;
+	font-size:100%;
+	overflow:hidden;
+	background:none repeat scroll 0% 0% #c0d2e2;
+}
+
+#content-region #marquee {
+	width:100%;
+	min-height:84px;
+	padding:0px;
+	overflow:hidden;
+	position:relative;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0px;
+	overflow:hidden;
+}
+
+#marquee #marquee-clip {
+	height:84px;
+	margin:0px auto 0px;
+	width:940px;
+	overflow:hidden;
+	position:relative;
+	background:none repeat scroll 0% 0% rgb(163,191,214);
+}
+
+#marquee-clip ul {
+	list-style:none outside none;
+	overflow:hidden;
+	position:relative;
+	height:84px;
+	top:0px;
+	margin:0px;
+	padding:0px;
+	left:0px; /* this is required for making it scroll from right to left in marquee style */
+	width:3880px;
+}
+
+#marquee-clip ul li {
+	float:left;
+	height:inherit;
+	list-style:none outside none;
+	width:940px;
+}
+
+/*
+ * probably the property of bottom margin 10px defined globally playing games
+#marquee-clip ul li p {
+	height:inherit;
+	overflow:hidden;
+	overflow-style:marquee;
+	marquee-direction:reverse;
+	marquee-loop:infinite;
+	marquee-style:slide;
+	marquee-speed:normal;
+}
+*/
+
+#marquee-clip ul li img {
+	display:block;
+	max-width:100%;
+	height:auto important;
+	/* height:84px; */
+}
+
+#marquee .marquee-prev, #marquee .marquee-next {
+	width:15px;
+	height:84px;
+	position:absolute;
+	top:0px;
+	z-index:5;
+}
+
+#marquee .marquee-prev {
+	background:url("img/previous.png") no-repeat scroll 0pt 50% #c0d2e2;
+	left:0px;
+}
+
+#marquee .marquee-next {
+	background:url("img/next.png") no-repeat scroll 0pt 50% transparent;
+	right:0px;
+}
+
+.img-marquee {
+	height:84px;
+	white-space:nowrap;
+	overflow:hiddren;
+	-moz-animation:img-left 10s linear;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-delay:5s;
+	-webkit-animation:img-left 10s linear;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-delay:5s;
+}
+
+@-moz-keyframes img-left {
+	0% {margin-left:0px;}
+	25% {margin-left:-500px;}
+	50% {margin-left:-1500px;}
+	75%{margin-left:-2500px;}
+	100%{margin-left:-3880px;}
+}
+
+@-webkit-keyframes img-left {
+	0% {margin-left:0px;}
+	25% {margin-left:-500px;}
+	50% {margin-left:-1500px;}
+	75%{margin-left:-2500px;}
+	100%{margin-left:-3880px;}
+}
+
+.my-marquee {
+	height:84px;
+	text-align:right;
+	white-space:nowrap;
+	margin-left:0px;
+	/* 
+	 * 27-05-2012
+	 * whatever is excess of the margin limits, is slowly disappeared
+	 * albeit from right end of the content
+	 */
+	overflow:hidden;
+	
+	/* 
+	 * 27-05-2012
+	 * for mozilla firefox browser need to use -moz-
+	 */
+	-moz-animation:left 10s linear;
+	-moz-animation-iteration-count:infinite;
+	
+	/* 
+	 * 27-05-2012
+	 * this works for chrome, safari
+	 */
+	-webkit-animation:left 10s linear;
+	-webkit-animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes left {
+	0% {margin-right:0%;}
+	25% {margin-right:25%}
+	50% {margin-right:50%;}
+	75% {margin-right:75%;}
+	100% {margin-right:100%;}
+}
+
+@-moz-keyframes left {
+	0% {margin-right:0%;}
+	25% {margin-right:25%;}
+	50% {margin-right:50%;}
+	75% {margin-right:75%;}
+	100% {margin-right:100%;}
+}
