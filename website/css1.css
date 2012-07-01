@@ -1,0 +1,302 @@
+body {
+	background:#ffffff;
+	margin:0px;
+	font-family:"Arial","Verdana","Sans Serif","Helvetica";
+	font-size:13px;
+	border-color:#000;
+	border:1pt dashed;
+}
+
+p {
+	margin-bottom:10px;
+}
+
+p:last-child {
+	margin-bottom:0px;
+}
+
+p, li {
+	font-size:12px;
+}
+
+p {
+	line-height:140%;
+}
+
+a {
+	color:#003399;
+	text-decoration:none;
+}
+
+a:visited {
+	color:#004499;
+}
+
+a:hover {
+	color:#6c88bb;
+}
+
+#universe {
+	margin-left:auto;
+	margin-right:auto;
+	position:static;
+	overflow:hidden;
+}
+
+#vertical-section {
+	background:#c0c0c0;
+	min-height:1000px;
+	width:70%;
+	margin-left:auto;
+	margin-right:auto;
+	position:static;
+	overflow:hidden;
+}
+
+#vertical-section .hi-bar {
+	margin-top:0%;
+	min-height:5%;
+	overflow:hidden;
+	background:#75c591;
+	font:#ffffff;
+}
+
+#vertical-section .mid-bar {
+	margin-top:1%;
+	min-height:60%;
+	overflow:hidden;
+}
+
+#vertical-section .lo-bar {
+	margin-top:1%;
+	min-height:20%;
+	overflow:hidden;
+	background:#75c591;
+}
+
+#logo-menu-search-signin-container {
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	/* border:1pt dashed;
+	border-color:#fff; */
+	min-height:inherit;
+	overflow:hidden;
+}
+
+#logo-menu-search-signin-container  #logo-container {
+	margin-top:1%;
+	margin-left:0%;
+	margin-bottom:0%;
+	height:80px;
+	float:left;
+	/* border:1pt dashed;
+	border-color:#fff; */
+	width:150px;
+	display:inline;
+	position:relative;
+}
+
+#logo-container img {
+	height:inherit;
+	width:100%;
+}
+
+#logo-menu-search-signin-container  #menu-search-signin-container {
+	float:right;
+	display:inline;
+	margin-top:1%;
+	margin-right:0%;
+	margin-left:1%;
+	margin-bottom:0%;
+	height:90px;
+	/* border:1pt dashed;
+	border-color:#fff; */
+	width:80%;
+	overflow:hidden;
+}
+
+#menu-search-signin-container #signin-container{
+	width:auto;
+	margin:0%;
+	/* border:1pt dashed;
+	border-color:#fff; */
+	text-align:right;
+	position:relative;
+	height:25%;
+	overflow:hidden;
+}
+
+#signin-container label {
+	margin-right:0.5%;
+	color:#fff;
+	font-size:15px;
+}
+
+#menu-search-signin-container #menu-search-container {
+	width:auto;
+	margin:0% 0% 0% 0%;
+	padding:0% 0% 0% 0%;
+	/* border:1pt dashed;
+	border-color:#fff; */
+	overflow:hidden;
+	height:75%;
+	position:relative;
+}
+
+#menu-search-container #menu-container {
+	width:50%;
+	float:left;
+	/* border:1pt dashed;
+	border-color:#fff; */
+	margin-bottom:0%;
+	height:80%;
+	position:relative;
+	overflow:hidden;
+}
+
+#menu-container ul, #search-container ul {
+	list-style-type:none;
+	padding:0%;
+	margin-bottom:0%;
+}
+
+#menu-container ul li {
+	display:inline;
+	color:#fff;
+	font-size:16px;
+	/* padding:0em 1em 0em 1em; */
+	/* 27-05-2012
+	 * need to find out the diff. between em and px
+	 * for some reason, em takes more space than 1px
+	 * changed to px to get better granularity of spacing
+	 * to make all the menu items come in one line
+	 */
+	padding:0px 10px 0px 10px;
+	margin-left:0em;
+}
+
+#search-container ul li{
+	display:inline;
+	color:#fff;
+	/* 
+	 * 27-05-2012
+	 * changed font size to fit all menu items in one line
+	 */
+	font-size:14px;
+	margin-left:0em;
+	margin-bottom:0%;
+}
+
+#search-container ul li input[type="text"] {
+	width:75%;
+}
+
+/* 
+ * 27-05-2012
+ * as mentioned below, need to make sum of left right margins
+ * and widths of adjacent containers amount to 100%. without
+ * this width, the submit button tries to take its own free will
+ * size (probably the 25% remaining out of 100) and then goes
+ * into the next line.
+ */
+#search-container ul li input[type="submit"] {
+	width:20%;
+	font-size:13px;
+}
+
+#menu-search-container #search-container {
+	width:38%;
+	float:right;
+	margin-right:0%;
+	padding:0px;
+	/* border:1pt dashed;
+	border-color:#fff; */
+	margin-bottom:0%;
+	height:80%;
+	position:relative;
+	overflow:hidden;
+}
+
+#horizontal-bkts {
+	min-height:inherit;
+	border:1pt dashed;
+	border-color:#fff;
+}
+
+#horizontal-bkts .hbkt {
+	height:20%;
+	margin-bottom:1%;
+}
+
+#horizontal-bkts .hbkt:last-child {
+	height:20%;
+	margin-bottom:0%;
+}
+
+.hbkt #hbkt-type {
+	height:5%;
+	overflow:hidden;
+	border:1pt dashed;
+	border-color:#fff;
+}
+
+.hbkt #hbkt-book {
+	overflow:hidden;
+	border:1pt dashed;
+	border-color:#fff;
+}
+
+#hbkt-book .book {
+	float:left;
+	width:5%;
+	padding-right:2%;
+}
+
+#hbkt-book .book:last-child {
+	float:left;
+	width:5%;
+	padding-right:0%;
+}
+
+.book #book-img {
+	height:70%;
+	width:auto;
+	border:1pt dashed;
+	border-color:#fff;
+}
+
+.book #book-title {
+	height:25%;
+	width:auto;
+	border:1pt dashed;
+	border-color:#fff;
+}
+
+#hbkt-book #elem-container {
+	height:auto;
+	margin:0%;
+	padding:0%;
+	overflow:hidden;
+	display:block;
+}
+
+#elem-container img {
+	height:50%;
+}
+
+#elem-container label {
+	font-size:15px;
+}
+
+#horizontal-bkts .hbkt-1 {
+
+}
+
+#horizontal-bkts .hbkt-2 {
+
+}
+
+#horizontal-bkts .hbkt-3 {
+
+}
